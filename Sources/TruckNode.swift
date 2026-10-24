@@ -18,38 +18,37 @@ public class TruckNode: SKNode {
     public init(type: TruckType) {
         self.truckType = type
 
-        var truckSize = CGSize(width: 90, height: 45)
+        var truckSize = CGSize(width: 88, height: 44)
         var textureName = "StoreItemTruckDefaultImageSm.png"
         var tintColor = SKColor.red
 
         switch type {
         case .bomber:
-            truckSize = CGSize(width: 95, height: 48)
+            truckSize = CGSize(width: 92, height: 46)
             textureName = "StoreItemTruckZombieImageSm.png"
             tintColor = SKColor(red: 0.9, green: 0.2, blue: 0.2, alpha: 1.0)
         case .bus:
-            truckSize = CGSize(width: 110, height: 50)
+            truckSize = CGSize(width: 105, height: 48)
             textureName = "StoreItemTruckHotrodImageSm.png"
             tintColor = SKColor(red: 0.95, green: 0.75, blue: 0.1, alpha: 1.0)
         case .crotchRocket:
-            truckSize = CGSize(width: 80, height: 40)
+            truckSize = CGSize(width: 78, height: 38)
             textureName = "StoreItemTruckBlingImageSm.png"
             tintColor = SKColor(red: 0.2, green: 0.85, blue: 0.3, alpha: 1.0)
         case .dart:
-            truckSize = CGSize(width: 85, height: 42)
+            truckSize = CGSize(width: 82, height: 40)
             textureName = "StoreItemTruckReptileImageSm.png"
             tintColor = SKColor(red: 0.2, green: 0.6, blue: 0.95, alpha: 1.0)
         case .doomstone:
-            truckSize = CGSize(width: 105, height: 52)
+            truckSize = CGSize(width: 100, height: 50)
             textureName = "StoreItemTruckGothImageSm.png"
             tintColor = SKColor(red: 0.5, green: 0.5, blue: 0.55, alpha: 1.0)
         case .mirv:
-            truckSize = CGSize(width: 92, height: 46)
+            truckSize = CGSize(width: 90, height: 44)
             textureName = "StoreItemTruckDefaultImageSm.png"
             tintColor = SKColor(red: 0.8, green: 0.3, blue: 0.95, alpha: 1.0)
         }
 
-        // Texture or styled body
         let tex = TruckNode.loadTexture(named: textureName)
         if let t = tex {
             truckSprite = SKSpriteNode(texture: t, size: truckSize)
@@ -62,30 +61,22 @@ public class TruckNode: SKNode {
         self.name = "Truck"
         addChild(truckSprite)
 
-        // Visual Wheels
-        let wheelL = SKShapeNode(circleOfRadius: 10)
+        // Wheels
+        let wheelL = SKShapeNode(circleOfRadius: 9)
         wheelL.fillColor = .black
         wheelL.strokeColor = .gray
         wheelL.lineWidth = 2
-        wheelL.position = CGPoint(x: -truckSize.width * 0.3, y: -truckSize.height * 0.4)
+        wheelL.position = CGPoint(x: -truckSize.width * 0.3, y: -truckSize.height * 0.38)
         wheelL.zPosition = 36
         addChild(wheelL)
 
-        let wheelR = SKShapeNode(circleOfRadius: 10)
+        let wheelR = SKShapeNode(circleOfRadius: 9)
         wheelR.fillColor = .black
         wheelR.strokeColor = .gray
         wheelR.lineWidth = 2
-        wheelR.position = CGPoint(x: truckSize.width * 0.3, y: -truckSize.height * 0.4)
+        wheelR.position = CGPoint(x: truckSize.width * 0.3, y: -truckSize.height * 0.38)
         wheelR.zPosition = 36
         addChild(wheelR)
-
-        // Glowing Headlight
-        let light = SKShapeNode(circleOfRadius: 5)
-        light.fillColor = .yellow
-        light.strokeColor = .white
-        light.position = CGPoint(x: truckSize.width * 0.48, y: -truckSize.height * 0.1)
-        light.zPosition = 37
-        addChild(light)
 
         setupPhysics(size: truckSize, massMultiplier: type == .doomstone ? 3.5 : 1.5)
     }
@@ -113,9 +104,9 @@ public class TruckNode: SKNode {
         self.physicsBody?.collisionBitMask = PhysicsCategory.structure | PhysicsCategory.skull | PhysicsCategory.ground | PhysicsCategory.explosive
     }
 
-    public func launch(withImpulse impulse: CGVector) {
+    public func launch(withVelocity velocity: CGVector) {
         self.physicsBody?.isDynamic = true
-        self.physicsBody?.applyImpulse(impulse)
+        self.physicsBody?.velocity = velocity
         self.isLaunched = true
 
         AudioManager.shared.triggerHaptic(style: .heavy)
@@ -137,30 +128,26 @@ public class TruckNode: SKNode {
 
         switch truckType {
         case .bus:
-            // Nitro Boost
             let currentVel = pb.velocity
-            let boost = CGVector(dx: currentVel.dx * 1.9, dy: currentVel.dy * 1.4 + 120)
-            pb.velocity = boost
+            pb.velocity = CGVector(dx: currentVel.dx * 1.8 + 200, dy: currentVel.dy * 1.3 + 150)
             AudioManager.shared.playSFX(named: "Nitro")
             emitNitroFlames()
 
         case .bomber:
-            // Drop Bomb
             guard let scene = self.scene else { return }
-            let bomb = SKSpriteNode(color: .black, size: CGSize(width: 28, height: 28))
+            let bomb = SKSpriteNode(color: .black, size: CGSize(width: 26, height: 26))
             bomb.position = CGPoint(x: self.position.x, y: self.position.y - 25)
-            bomb.physicsBody = SKPhysicsBody(circleOfRadius: 14)
+            bomb.physicsBody = SKPhysicsBody(circleOfRadius: 13)
             bomb.physicsBody?.categoryBitMask = PhysicsCategory.truck
             bomb.physicsBody?.collisionBitMask = PhysicsCategory.structure | PhysicsCategory.ground | PhysicsCategory.skull
             bomb.physicsBody?.contactTestBitMask = PhysicsCategory.structure | PhysicsCategory.ground | PhysicsCategory.skull
             bomb.name = "Bomb"
             bomb.zPosition = 32
             scene.addChild(bomb)
-            bomb.physicsBody?.applyImpulse(CGVector(dx: 0, dy: -40))
+            bomb.physicsBody?.velocity = CGVector(dx: pb.velocity.dx * 0.5, dy: -300)
             AudioManager.shared.playSFX(named: "BrownBomber_TapEffect")
 
         case .mirv:
-            // Split into 3
             guard let scene = self.scene else { return }
             for angleOffset in [-0.25, 0.25] {
                 let sub = TruckNode(type: .crotchRocket)
@@ -179,7 +166,7 @@ public class TruckNode: SKNode {
             AudioManager.shared.playSFX(named: "CrotchRocket_TapEffect")
 
         case .crotchRocket:
-            pb.velocity = CGVector(dx: pb.velocity.dx * 2.1, dy: pb.velocity.dy * 1.3)
+            pb.velocity = CGVector(dx: pb.velocity.dx * 2.0, dy: pb.velocity.dy * 1.2)
             AudioManager.shared.playSFX(named: "Nitro")
             emitNitroFlames()
 
@@ -192,7 +179,7 @@ public class TruckNode: SKNode {
         let flame = SKShapeNode(ellipseOf: CGSize(width: 40, height: 16))
         flame.fillColor = .orange
         flame.strokeColor = .yellow
-        flame.position = CGPoint(x: -50, y: 0)
+        flame.position = CGPoint(x: -45, y: 0)
         flame.zPosition = 34
         addChild(flame)
         flame.run(SKAction.sequence([

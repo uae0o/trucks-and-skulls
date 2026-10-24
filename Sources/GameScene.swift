@@ -18,8 +18,11 @@ public class GameScene: SKScene, SKPhysicsContactDelegate {
 
     private var activeTruck: TruckNode?
     private var truckQueue: [TruckType] = []
-    private var launcherPosition = CGPoint(x: -550, y: -150)
-    private var isDragging = false
+    private var launcherPosition = CGPoint(x: -770, y: -140)
+    private var isDraggingSlingshot = false
+    private var isPanningCamera = false
+    private var panStartPoint = CGPoint.zero
+    private var worldStartPos = CGPoint.zero
     private var dragStart = CGPoint.zero
     private var dragCurrent = CGPoint.zero
 
@@ -38,23 +41,26 @@ public class GameScene: SKScene, SKPhysicsContactDelegate {
     private var trucksLeftLabel = SKLabelNode(fontNamed: "HelveticaNeue-Bold")
     private var remainingSkullsCount = 0
 
+    // Zoom level scale to display both launcher and targets simultaneously
+    private let fieldScale: CGFloat = 0.65
+
     override public func didMove(to view: SKView) {
         self.anchorPoint = CGPoint(x: 0.5, y: 0.5)
-        self.backgroundColor = SKColor(red: 0.14, green: 0.08, blue: 0.08, alpha: 1.0)
+        self.backgroundColor = SKColor(red: 0.12, green: 0.08, blue: 0.08, alpha: 1.0)
         
-        // Balanced gravity to keep structures stable
-        physicsWorld.gravity = CGVector(dx: 0.0, dy: -9.8 * 55.0)
+        physicsWorld.gravity = CGVector(dx: 0.0, dy: -9.8 * 60.0)
         physicsWorld.contactDelegate = self
 
         // Background
         if let bgTex = loadTexture(named: "Episode03BG.png") ?? loadTexture(named: "Episode01BG.png") {
             let bg = SKSpriteNode(texture: bgTex)
-            bg.size = CGSize(width: size.width * 1.6, height: size.height * 1.25)
+            bg.size = CGSize(width: size.width * 1.8, height: size.height * 1.3)
             bg.zPosition = -100
             addChild(bg)
             self.bgNode = bg
         }
 
+        worldNode.setScale(fieldScale)
         addChild(worldNode)
         addChild(hudNode)
 
@@ -64,7 +70,6 @@ public class GameScene: SKScene, SKPhysicsContactDelegate {
         let startLevelName = levelFiles.indices.contains(currentLevelIndex) ? levelFiles[currentLevelIndex] : "Outpost"
         loadLevel(named: startLevelName)
 
-        // Start background music
         AudioManager.shared.playMusic()
     }
 
@@ -102,56 +107,55 @@ public class GameScene: SKScene, SKPhysicsContactDelegate {
         hudNode.addChild(trucksLeftLabel)
 
         // Retry button
-        let restartBtn = SKShapeNode(rectOf: CGSize(width: 90, height: 36), cornerRadius: 8)
+        let restartBtn = SKShapeNode(rectOf: CGSize(width: 95, height: 38), cornerRadius: 8)
         restartBtn.fillColor = SKColor(white: 0.2, alpha: 0.85)
         restartBtn.strokeColor = .yellow
-        restartBtn.lineWidth = 2
-        restartBtn.position = CGPoint(x: size.width / 2 - 65, y: -size.height / 2 + 40)
+        restartBtn.lineWidth = 2.5
+        restartBtn.position = CGPoint(x: size.width / 2 - 70, y: -size.height / 2 + 45)
         restartBtn.name = "RestartButton"
         restartBtn.zPosition = 100
         let restartLbl = SKLabelNode(fontNamed: "HelveticaNeue-Bold")
         restartLbl.text = "RETRY"
-        restartLbl.fontSize = 15
+        restartLbl.fontSize = 16
         restartLbl.verticalAlignmentMode = .center
         restartLbl.name = "RestartButton"
         restartBtn.addChild(restartLbl)
         hudNode.addChild(restartBtn)
 
-        // Left rubber band
+        // Slingshot elastic bands
         slingshotLineL = SKShapeNode()
         slingshotLineL?.strokeColor = SKColor(red: 0.95, green: 0.7, blue: 0.15, alpha: 1.0)
-        slingshotLineL?.lineWidth = 6
+        slingshotLineL?.lineWidth = 7
         slingshotLineL?.zPosition = 25
         worldNode.addChild(slingshotLineL!)
 
-        // Right rubber band
         slingshotLineR = SKShapeNode()
         slingshotLineR?.strokeColor = SKColor(red: 0.85, green: 0.6, blue: 0.1, alpha: 1.0)
-        slingshotLineR?.lineWidth = 6
+        slingshotLineR?.lineWidth = 7
         slingshotLineR?.zPosition = 38
         worldNode.addChild(slingshotLineR!)
 
-        // Pulsing aim guide ring
-        aimGuideRing = SKShapeNode(circleOfRadius: 45)
+        // Aim guide ring
+        aimGuideRing = SKShapeNode(circleOfRadius: 50)
         aimGuideRing?.strokeColor = .yellow
-        aimGuideRing?.lineWidth = 2.5
-        aimGuideRing?.fillColor = SKColor(red: 1.0, green: 0.9, blue: 0.2, alpha: 0.15)
+        aimGuideRing?.lineWidth = 3
+        aimGuideRing?.fillColor = SKColor(red: 1.0, green: 0.9, blue: 0.2, alpha: 0.2)
         aimGuideRing?.zPosition = 28
         worldNode.addChild(aimGuideRing!)
 
         let pulse = SKAction.sequence([
-            SKAction.scale(to: 1.15, duration: 0.8),
-            SKAction.scale(to: 0.95, duration: 0.8)
+            SKAction.scale(to: 1.15, duration: 0.7),
+            SKAction.scale(to: 0.92, duration: 0.7)
         ])
         aimGuideRing?.run(SKAction.repeatForever(pulse))
 
         // Trajectory dots
-        for _ in 0..<20 {
-            let dot = SKShapeNode(circleOfRadius: 5)
+        for _ in 0..<22 {
+            let dot = SKShapeNode(circleOfRadius: 6)
             dot.fillColor = .yellow
             dot.strokeColor = .white
-            dot.lineWidth = 1
-            dot.alpha = 0.8
+            dot.lineWidth = 1.5
+            dot.alpha = 0.85
             dot.isHidden = true
             dot.zPosition = 50
             worldNode.addChild(dot)
@@ -219,27 +223,27 @@ public class GameScene: SKScene, SKPhysicsContactDelegate {
         if let lx = current.launcherX, let ly = current.launcherY {
             launcherPosition = CGPoint(x: lx, y: ly)
         } else {
-            launcherPosition = CGPoint(x: -550, y: -150)
+            launcherPosition = CGPoint(x: -770, y: -140)
         }
         aimGuideRing?.position = launcherPosition
 
         // 1. Build Ground
-        let groundW: CGFloat = 3600.0
+        let groundW: CGFloat = 3800.0
         let groundH: CGFloat = 160.0
         let ground = SKSpriteNode(color: SKColor(red: 0.22, green: 0.12, blue: 0.08, alpha: 1.0),
                                   size: CGSize(width: groundW, height: groundH))
         ground.position = CGPoint(x: 0, y: -380)
         ground.physicsBody = SKPhysicsBody(rectangleOf: ground.size)
         ground.physicsBody?.isDynamic = false
-        ground.physicsBody?.friction = 0.9
+        ground.physicsBody?.friction = 0.95
         ground.physicsBody?.categoryBitMask = PhysicsCategory.ground
         ground.physicsBody?.collisionBitMask = PhysicsCategory.all
         ground.zPosition = 5
         worldNode.addChild(ground)
 
         let grass = SKSpriteNode(color: SKColor(red: 0.35, green: 0.55, blue: 0.2, alpha: 1.0),
-                                 size: CGSize(width: groundW, height: 12))
-        grass.position = CGPoint(x: 0, y: -380 + groundH / 2 - 6)
+                                 size: CGSize(width: groundW, height: 14))
+        grass.position = CGPoint(x: 0, y: -380 + groundH / 2 - 7)
         grass.zPosition = 6
         worldNode.addChild(grass)
 
@@ -265,36 +269,33 @@ public class GameScene: SKScene, SKPhysicsContactDelegate {
         skullsLeftLabel.text = "SKULLS: \(remainingSkullsCount)"
         prepareNextTruck()
 
-        // Center camera near launcher
-        worldNode.position = CGPoint(x: -launcherPosition.x - 250, y: -launcherPosition.y * 0.25)
+        // Center camera so both launcher and target castle are balanced on screen
+        worldNode.position = CGPoint(x: -80, y: 40)
     }
 
     private func buildSlingshot(at pos: CGPoint) {
-        // Base post
-        let base = SKShapeNode(rectOf: CGSize(width: 22, height: 110), cornerRadius: 4)
+        let base = SKShapeNode(rectOf: CGSize(width: 24, height: 110), cornerRadius: 5)
         base.fillColor = SKColor(red: 0.35, green: 0.2, blue: 0.1, alpha: 1.0)
         base.strokeColor = .black
-        base.lineWidth = 2
+        base.lineWidth = 2.5
         base.position = CGPoint(x: pos.x, y: pos.y - 70)
         base.zPosition = 20
         worldNode.addChild(base)
 
-        // Left prong
-        let postLeft = SKShapeNode(rectOf: CGSize(width: 14, height: 75), cornerRadius: 4)
+        let postLeft = SKShapeNode(rectOf: CGSize(width: 16, height: 80), cornerRadius: 4)
         postLeft.fillColor = SKColor(red: 0.45, green: 0.25, blue: 0.12, alpha: 1.0)
         postLeft.strokeColor = .black
-        postLeft.lineWidth = 2
-        postLeft.position = CGPoint(x: pos.x - 22, y: pos.y - 10)
+        postLeft.lineWidth = 2.5
+        postLeft.position = CGPoint(x: pos.x - 24, y: pos.y - 10)
         postLeft.zRotation = -0.25
         postLeft.zPosition = 20
         worldNode.addChild(postLeft)
 
-        // Right prong
-        let postRight = SKShapeNode(rectOf: CGSize(width: 14, height: 75), cornerRadius: 4)
+        let postRight = SKShapeNode(rectOf: CGSize(width: 16, height: 80), cornerRadius: 4)
         postRight.fillColor = SKColor(red: 0.5, green: 0.3, blue: 0.15, alpha: 1.0)
         postRight.strokeColor = .black
-        postRight.lineWidth = 2
-        postRight.position = CGPoint(x: pos.x + 22, y: pos.y - 10)
+        postRight.lineWidth = 2.5
+        postRight.position = CGPoint(x: pos.x + 24, y: pos.y - 10)
         postRight.zRotation = 0.25
         postRight.zPosition = 20
         worldNode.addChild(postRight)
@@ -317,6 +318,12 @@ public class GameScene: SKScene, SKPhysicsContactDelegate {
             skullBase.strokeColor = .black
             skullBase.lineWidth = 2.5
             skullNode.addChild(skullBase)
+
+            // Red glowing target ring
+            let targetRing = SKShapeNode(circleOfRadius: size.width / 2 + 8)
+            targetRing.strokeColor = SKColor(red: 1.0, green: 0.2, blue: 0.2, alpha: 0.7)
+            targetRing.lineWidth = 2
+            skullNode.addChild(targetRing)
 
             let eyeL = SKShapeNode(circleOfRadius: 4.5)
             eyeL.fillColor = .black
@@ -354,17 +361,15 @@ public class GameScene: SKScene, SKPhysicsContactDelegate {
         }
 
         if isGround {
-            // Anchor / Indestructium foundations are STATIC
             node.physicsBody?.isDynamic = false
             node.physicsBody?.categoryBitMask = PhysicsCategory.ground
         } else {
-            // Dynamic structure blocks: High friction, low restitution, high damping to prevent auto-collapse
             node.physicsBody?.isDynamic = true
-            node.physicsBody?.friction = 0.9
+            node.physicsBody?.friction = 0.95
             node.physicsBody?.restitution = 0.05
-            node.physicsBody?.linearDamping = 1.4
-            node.physicsBody?.angularDamping = 1.6
-            node.physicsBody?.isResting = true // Stable until impacted!
+            node.physicsBody?.linearDamping = 1.5
+            node.physicsBody?.angularDamping = 1.8
+            node.physicsBody?.isResting = true
 
             if isSkull {
                 node.physicsBody?.mass = 1.0
@@ -399,7 +404,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate {
         if name.contains("LargeCircle") { return CGSize(width: 80, height: 80) }
         if name.contains("MediumCircle") { return CGSize(width: 55, height: 55) }
         if name.contains("SmallCircle") { return CGSize(width: 32, height: 32) }
-        if name.contains("Skull") { return CGSize(width: 44, height: 44) }
+        if name.contains("Skull") { return CGSize(width: 48, height: 48) }
         if name.contains("Boiler") || name.contains("Barrel") { return CGSize(width: 46, height: 64) }
         return CGSize(width: 50, height: 50)
     }
@@ -442,8 +447,8 @@ public class GameScene: SKScene, SKPhysicsContactDelegate {
     }
 
     private func updateSlingshotLines(truckPos: CGPoint) {
-        let prongL = CGPoint(x: launcherPosition.x - 22, y: launcherPosition.y + 15)
-        let prongR = CGPoint(x: launcherPosition.x + 22, y: launcherPosition.y + 15)
+        let prongL = CGPoint(x: launcherPosition.x - 24, y: launcherPosition.y + 15)
+        let prongR = CGPoint(x: launcherPosition.x + 24, y: launcherPosition.y + 15)
 
         let pathL = CGMutablePath()
         pathL.move(to: prongL)
@@ -459,7 +464,6 @@ public class GameScene: SKScene, SKPhysicsContactDelegate {
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else { return }
 
-        // HUD buttons
         let hudLoc = touch.location(in: hudNode)
         for node in hudNode.nodes(at: hudLoc) {
             if node.name == "RestartButton" || node.parent?.name == "RestartButton" {
@@ -478,43 +482,62 @@ public class GameScene: SKScene, SKPhysicsContactDelegate {
             return
         }
 
-        // Aim drag initiation: Anywhere on left side or near launcher
+        // Check if touching slingshot/launcher
         let dist = hypot(location.x - launcherPosition.x, location.y - launcherPosition.y)
-        if dist < 220 || location.x < launcherPosition.x + 100 {
-            isDragging = true
+        if dist < 250 || (location.x < launcherPosition.x + 120 && abs(location.y - launcherPosition.y) < 220) {
+            isDraggingSlingshot = true
             dragStart = launcherPosition
             dragCurrent = location
             aimGuideRing?.isHidden = true
             updateSlingshotAim()
+        } else {
+            // Touch anywhere else pans the camera
+            isPanningCamera = true
+            panStartPoint = touch.location(in: self)
+            worldStartPos = worldNode.position
         }
     }
 
     override public func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        guard isDragging, let touch = touches.first else { return }
-        dragCurrent = touch.location(in: worldNode)
-        updateSlingshotAim()
+        guard let touch = touches.first else { return }
+
+        if isDraggingSlingshot {
+            dragCurrent = touch.location(in: worldNode)
+            updateSlingshotAim()
+        } else if isPanningCamera {
+            let current = touch.location(in: self)
+            let dx = current.x - panStartPoint.x
+            worldNode.position.x = max(-500, min(300, worldStartPos.x + dx))
+        }
     }
 
     override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        guard isDragging else { return }
-        isDragging = false
+        if isPanningCamera {
+            isPanningCamera = false
+            return
+        }
+
+        guard isDraggingSlingshot else { return }
+        isDraggingSlingshot = false
 
         let dx = dragStart.x - dragCurrent.x
         let dy = dragStart.y - dragCurrent.y
         let pullDist = hypot(dx, dy)
 
-        // Reset rubber band
         updateSlingshotLines(truckPos: launcherPosition)
         for dot in trajectoryDots { dot.isHidden = true }
 
-        if pullDist > 25, let truck = activeTruck {
-            let maxPull: CGFloat = 180.0
+        if pullDist > 20, let truck = activeTruck {
+            let maxPull: CGFloat = 175.0
             let clampedDist = min(pullDist, maxPull)
             let ratio = clampedDist / pullDist
-            let forceMult: CGFloat = 19.5
 
-            let impulse = CGVector(dx: dx * ratio * forceMult, dy: dy * ratio * forceMult)
-            truck.launch(withImpulse: impulse)
+            // Direct powerful throw velocity
+            let speedMult: CGFloat = 16.5
+            let vx = dx * ratio * speedMult
+            let vy = dy * ratio * speedMult
+
+            truck.launch(withVelocity: CGVector(dx: vx, dy: vy))
             updateTruckQueueHUD()
 
             run(SKAction.sequence([
@@ -530,7 +553,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate {
     }
 
     private func updateSlingshotAim() {
-        let maxPull: CGFloat = 180.0
+        let maxPull: CGFloat = 175.0
         let dx = dragCurrent.x - dragStart.x
         let dy = dragCurrent.y - dragStart.y
         let dist = hypot(dx, dy)
@@ -550,19 +573,19 @@ public class GameScene: SKScene, SKPhysicsContactDelegate {
 
         let pullX = dragStart.x - clampedPos.x
         let pullY = dragStart.y - clampedPos.y
-        let forceMult: CGFloat = 19.5
+        let speedMult: CGFloat = 16.5
 
         var simPos = clampedPos
-        var simVel = CGVector(dx: pullX * forceMult * 0.016, dy: pullY * forceMult * 0.016)
-        let gravity = CGVector(dx: 0, dy: -9.8 * 55.0 * 0.016 * 0.016)
+        var simVel = CGVector(dx: pullX * speedMult, dy: pullY * speedMult)
+        let gravity = CGVector(dx: 0, dy: -9.8 * 60.0)
 
         for dot in trajectoryDots {
             dot.position = simPos
             dot.isHidden = false
-            simVel.dx += gravity.dx
-            simVel.dy += gravity.dy
-            simPos.x += simVel.dx * 3.2
-            simPos.y += simVel.dy * 3.2
+            simVel.dx += gravity.dx * 0.035
+            simVel.dy += gravity.dy * 0.035
+            simPos.x += simVel.dx * 0.035
+            simPos.y += simVel.dy * 0.035
         }
     }
 
@@ -570,7 +593,6 @@ public class GameScene: SKScene, SKPhysicsContactDelegate {
         let maskA = contact.bodyA.categoryBitMask
         let maskB = contact.bodyB.categoryBitMask
 
-        // Haptic impact
         if contact.collisionImpulse > 25 {
             AudioManager.shared.triggerHaptic(style: .medium)
         }
@@ -592,7 +614,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate {
             }
         }
 
-        // Sound on structure / material impacts
+        // Material sound effects
         if maskA == PhysicsCategory.truck || maskB == PhysicsCategory.truck {
             let otherBody = maskA == PhysicsCategory.truck ? contact.bodyB : contact.bodyA
             if let name = otherBody.node?.name {
@@ -615,14 +637,13 @@ public class GameScene: SKScene, SKPhysicsContactDelegate {
         AudioManager.shared.playSFX(named: "Skull_Destruction")
         AudioManager.shared.triggerHaptic(style: .heavy)
 
-        // Shatter burst
-        for _ in 0..<10 {
-            let bit = SKShapeNode(circleOfRadius: 3.5)
+        for _ in 0..<12 {
+            let bit = SKShapeNode(circleOfRadius: 4)
             bit.fillColor = .white
             bit.strokeColor = .gray
             bit.position = pos
-            bit.physicsBody = SKPhysicsBody(circleOfRadius: 3.5)
-            bit.physicsBody?.applyImpulse(CGVector(dx: CGFloat.random(in: -25...25), dy: CGFloat.random(in: 12...35)))
+            bit.physicsBody = SKPhysicsBody(circleOfRadius: 4)
+            bit.physicsBody?.applyImpulse(CGVector(dx: CGFloat.random(in: -30...30), dy: CGFloat.random(in: 15...40)))
             worldNode.addChild(bit)
             bit.run(SKAction.sequence([SKAction.fadeOut(withDuration: 0.9), SKAction.removeFromParent()]))
         }
@@ -637,7 +658,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate {
         AudioManager.shared.playSFX(named: "BonusBombExplosion2")
         AudioManager.shared.triggerHaptic(style: .heavy)
 
-        let flash = SKShapeNode(circleOfRadius: 85)
+        let flash = SKShapeNode(circleOfRadius: 90)
         flash.position = pos
         flash.fillColor = .orange
         flash.strokeColor = .yellow
@@ -647,20 +668,19 @@ public class GameScene: SKScene, SKPhysicsContactDelegate {
         worldNode.addChild(flash)
 
         flash.run(SKAction.sequence([
-            SKAction.scale(to: 2.4, duration: 0.16),
+            SKAction.scale(to: 2.5, duration: 0.16),
             SKAction.fadeOut(withDuration: 0.25),
             SKAction.removeFromParent()
         ]))
 
-        // Radial explosion shockwave
-        let explosionRadius: CGFloat = 220.0
+        let explosionRadius: CGFloat = 240.0
         for child in worldNode.children {
             guard let pb = child.physicsBody, pb.isDynamic else { continue }
             let dist = hypot(child.position.x - pos.x, child.position.y - pos.y)
             if dist < explosionRadius && dist > 1.0 {
-                let force = (1.0 - dist / explosionRadius) * 120.0
+                let force = (1.0 - dist / explosionRadius) * 140.0
                 let impulse = CGVector(dx: (child.position.x - pos.x) / dist * force,
-                                       dy: (child.position.y - pos.y) / dist * force + 20)
+                                       dy: (child.position.y - pos.y) / dist * force + 25)
                 pb.applyImpulse(impulse)
             }
         }
@@ -729,15 +749,17 @@ public class GameScene: SKScene, SKPhysicsContactDelegate {
 
     override public func update(_ currentTime: TimeInterval) {
         if let truck = activeTruck, truck.isLaunched {
-            let targetX = -truck.position.x
-            let targetY = -truck.position.y * 0.35
+            // Track truck in flight smoothly
+            let targetX = -truck.position.x * fieldScale
+            let targetY = -truck.position.y * fieldScale * 0.4
             worldNode.position.x += (targetX - worldNode.position.x) * 0.08
             worldNode.position.y += (targetY - worldNode.position.y) * 0.08
-        } else {
-            let targetX = -launcherPosition.x - 250
-            let targetY = -launcherPosition.y * 0.25
-            worldNode.position.x += (targetX - worldNode.position.x) * 0.06
-            worldNode.position.y += (targetY - worldNode.position.y) * 0.06
+        } else if !isPanningCamera {
+            // Balanced view of both launcher and targets
+            let targetX: CGFloat = -80.0
+            let targetY: CGFloat = 40.0
+            worldNode.position.x += (targetX - worldNode.position.x) * 0.05
+            worldNode.position.y += (targetY - worldNode.position.y) * 0.05
         }
     }
 
@@ -755,20 +777,20 @@ public class GameScene: SKScene, SKPhysicsContactDelegate {
             theme: "Theme_HellsHighway",
             width: 2034.0,
             height: 768.0,
-            launcherX: -550.0,
-            launcherY: -150.0,
+            launcherX: -770.0,
+            launcherY: -140.0,
             projectiles: ["Projectile_CrotchRocket", "Projectile_Bus", "Projectile_Bomber"],
             parts: [
-                PartData(name: "StructurePart_IndestructiumHugeSquare", x: 160, y: -290, angle: 0, hinged: false),
-                PartData(name: "StructurePart_WoodMediumBeam", x: 100, y: -200, angle: 90, hinged: false),
-                PartData(name: "StructurePart_WoodMediumBeam", x: 220, y: -200, angle: 90, hinged: false),
-                PartData(name: "StructurePart_WoodLongBeam", x: 160, y: -155, angle: 0, hinged: false),
-                PartData(name: "StructurePart_WoodMediumBeam", x: 130, y: -110, angle: 90, hinged: false),
-                PartData(name: "StructurePart_WoodMediumBeam", x: 190, y: -110, angle: 90, hinged: false),
-                PartData(name: "StructurePart_WoodMediumBeam", x: 160, y: -65, angle: 0, hinged: false),
-                PartData(name: "StructurePart_Skull", x: 160, y: -25, angle: 0, hinged: false),
-                PartData(name: "StructurePart_Skull", x: 160, y: -200, angle: 0, hinged: false),
-                PartData(name: "StructurePart_Boiler", x: 300, y: -200, angle: 0, hinged: false)
+                PartData(name: "StructurePart_IndestructiumHugeSquare", x: 450, y: -290, angle: 0, hinged: false),
+                PartData(name: "StructurePart_WoodMediumBeam", x: 400, y: -200, angle: 90, hinged: false),
+                PartData(name: "StructurePart_WoodMediumBeam", x: 500, y: -200, angle: 90, hinged: false),
+                PartData(name: "StructurePart_WoodLongBeam", x: 450, y: -155, angle: 0, hinged: false),
+                PartData(name: "StructurePart_WoodMediumBeam", x: 420, y: -110, angle: 90, hinged: false),
+                PartData(name: "StructurePart_WoodMediumBeam", x: 480, y: -110, angle: 90, hinged: false),
+                PartData(name: "StructurePart_WoodMediumBeam", x: 450, y: -65, angle: 0, hinged: false),
+                PartData(name: "StructurePart_Skull", x: 450, y: -25, angle: 0, hinged: false),
+                PartData(name: "StructurePart_Skull", x: 450, y: -200, angle: 0, hinged: false),
+                PartData(name: "StructurePart_Boiler", x: 580, y: -200, angle: 0, hinged: false)
             ]
         )
     }
