@@ -1,0 +1,21 @@
+name: TrucksAndSkulls
+options:
+  bundleIdPrefix: com.appyentertainment
+  deploymentTarget:
+    iOS: "14.0"
+targets:
+  TrucksAndSkulls:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources
+      - path: Resources
+    settings:
+      base:
+        PRODUCT_NAME: "Trucks and Skulls"
+        PRODUCT_BUNDLE_IDENTIFIER: com.appyentertainment.trucksandskulls
+        INFOPLIST_FILE: Sources/Info.plist
+        TARGETED_DEVICE_FAMILY: "1,2"
+        IPHONEOS_DEPLOYMENT_TARGET: "14.0"
+        SWIFT_VERSION: "5.0"
+        ENABLE_BITCODE: "NO"

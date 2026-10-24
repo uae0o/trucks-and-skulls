@@ -1,0 +1,184 @@
+{
+  "file": "Floating%20Skulls",
+  "name": "Floating Skulls",
+  "theme": "Theme_HauntedWasteland",
+  "width": 2034.0,
+  "height": 768.0,
+  "launcherX": -666.55224609375,
+  "launcherY": -157.98858642578125,
+  "projectiles": [
+    "Projectile_MIRV",
+    "Projectile_Dart",
+    "Projectile_CrotchRocket"
+  ],
+  "parts": [
+    {
+      "name": "StructurePart_Lava",
+      "x": 294.2503967285156,
+      "y": -305.23712158203125,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Lava",
+      "x": 779.1488647460938,
+      "y": -303.7743225097656,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_RubberLargeBeam",
+      "x": 880.020263671875,
+      "y": 87.62239074707031,
+      "angle": 270.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Rubber30Triangle",
+      "x": 854.0197143554688,
+      "y": 172.8057861328125,
+      "angle": 90.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Rubber30TriangleFlipped",
+      "x": 856.0196533203125,
+      "y": -178.864501953125,
+      "angle": 90.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_RubberLargeBeam",
+      "x": 880.020263671875,
+      "y": -92.1776123046875,
+      "angle": 270.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumSmallBeam",
+      "x": 470.6568908691406,
+      "y": -110.67718505859375,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_RubberLargeBeam",
+      "x": 624.4874267578125,
+      "y": -216.364501953125,
+      "angle": 180.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Rubber30Triangle",
+      "x": 624.4874267578125,
+      "y": -186.4645233154297,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_RubberLargeBeam",
+      "x": 534.5875244140625,
+      "y": -216.364501953125,
+      "angle": 180.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumLargeBeam",
+      "x": 392.2874755859375,
+      "y": -231.09999084472656,
+      "angle": 90.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumSmallBeam",
+      "x": 622.4395751953125,
+      "y": -112.59716796875,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumSmallBeam",
+      "x": 549.2550048828125,
+      "y": 24.88852310180664,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumSmallBeam",
+      "x": 549.2548828125,
+      "y": -62.8829345703125,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GroundBox",
+      "x": 0.0,
+      "y": -340.0,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Rubber30TriangleFlipped",
+      "x": 444.6876220703125,
+      "y": -186.4645233154297,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_RubberLargeBeam",
+      "x": 444.6876220703125,
+      "y": -216.364501953125,
+      "angle": 1.001791224553017e-05,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumMediumSuperstructure",
+      "x": 919.5806884765625,
+      "y": -6.0999755859375,
+      "angle": 90.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumLargeBeam",
+      "x": 676.8875732421875,
+      "y": -231.09999084472656,
+      "angle": 90.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_RubberLargeBeam",
+      "x": 880.020263671875,
+      "y": -2.277606964111328,
+      "angle": 270.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelSkull",
+      "x": 624.075927734375,
+      "y": -78.88738250732422,
+      "angle": -0.22931991517543793,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelSkull",
+      "x": 550.3818359375,
+      "y": -29.177797317504883,
+      "angle": -0.1966903656721115,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelSkull",
+      "x": 550.3819580078125,
+      "y": 58.593658447265625,
+      "angle": -0.19668534398078918,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelSkull",
+      "x": 471.7839050292969,
+      "y": -76.97205352783203,
+      "angle": -0.1966797560453415,
+      "hinged": false
+    }
+  ]
+}

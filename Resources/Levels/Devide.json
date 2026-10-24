@@ -1,0 +1,93 @@
+{
+  "file": "Devide",
+  "name": "Devide",
+  "theme": "Theme_Iceopolis",
+  "width": 2034.0,
+  "height": 768.0,
+  "launcherX": -606.4892578125,
+  "launcherY": -184.64999389648438,
+  "projectiles": [
+    "Projectile_Doomstone",
+    "Projectile_CrotchRocket",
+    "Projectile_CrotchRocket"
+  ],
+  "parts": [
+    {
+      "name": "StructurePart_GroundBox",
+      "x": 0.0,
+      "y": -340.0,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelLargeSquare",
+      "x": 428.65570068359375,
+      "y": 178.24630737304688,
+      "angle": -0.22538983821868896,
+      "hinged": true
+    },
+    {
+      "name": "StructurePart_Skull",
+      "x": 424.62445068359375,
+      "y": 219.6066131591797,
+      "angle": 0.009211817756295204,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Skull",
+      "x": 469.53338623046875,
+      "y": 174.22386169433594,
+      "angle": -0.6249786615371704,
+      "hinged": true
+    },
+    {
+      "name": "StructurePart_Skull",
+      "x": 387.778076171875,
+      "y": 174.22386169433594,
+      "angle": -0.18254950642585754,
+      "hinged": true
+    },
+    {
+      "name": "StructurePart_SteelLargeBeam",
+      "x": 427.9189758300781,
+      "y": -268.17340087890625,
+      "angle": -0.004649053327739239,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelLargeBeam",
+      "x": 427.9117431640625,
+      "y": -252.8780975341797,
+      "angle": -0.00393897807225585,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelLargeBeam",
+      "x": 427.9087829589844,
+      "y": -237.56314086914062,
+      "angle": -0.014365946874022484,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Skull",
+      "x": 424.633056640625,
+      "y": -211.1966552734375,
+      "angle": 0.010573280043900013,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelLargeSquare",
+      "x": 360.104736328125,
+      "y": -253.10275268554688,
+      "angle": -0.0010921916691586375,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelLargeSquare",
+      "x": 495.72589111328125,
+      "y": -253.1096649169922,
+      "angle": -0.011902696453034878,
+      "hinged": false
+    }
+  ]
+}

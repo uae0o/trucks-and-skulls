@@ -1,0 +1,128 @@
+{
+  "file": "Drop%20Zone",
+  "name": "Drop Zone",
+  "theme": "Theme_HellsHighway",
+  "width": 2034.0,
+  "height": 768.0,
+  "launcherX": -597.6995849609375,
+  "launcherY": -163.84002685546875,
+  "projectiles": [
+    "Projectile_Bomber",
+    "Projectile_Bomber",
+    "Projectile_Bomber"
+  ],
+  "parts": [
+    {
+      "name": "StructurePart_GroundBox",
+      "x": 0.0,
+      "y": -340.0,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumHugeSquare",
+      "x": 554.1795654296875,
+      "y": -231.09999084472656,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumHugeSquare",
+      "x": 673.7496337890625,
+      "y": -231.09999084472656,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumDoubleBeam",
+      "x": 614.07958984375,
+      "y": -231.09999084472656,
+      "angle": 90.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Skull",
+      "x": 563.6897583007812,
+      "y": -122.02601623535156,
+      "angle": -0.10904138535261154,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Skull",
+      "x": 665.001220703125,
+      "y": -122.02645874023438,
+      "angle": 0.007019014097750187,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Lava",
+      "x": 336.5307312011719,
+      "y": -286.2200012207031,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassLargeSquare",
+      "x": 563.4569702148438,
+      "y": -163.30386352539062,
+      "angle": -0.016248440369963646,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassLargeSquare",
+      "x": 665.8646240234375,
+      "y": -163.30218505859375,
+      "angle": 0.0013911700807511806,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Lava",
+      "x": 866.3333129882812,
+      "y": -292.5514221191406,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassLargeBeam",
+      "x": 517.6932373046875,
+      "y": -140.78524780273438,
+      "angle": 89.8685531616211,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassLargeBeam",
+      "x": 532.9972534179688,
+      "y": -140.80813598632812,
+      "angle": 89.86372375488281,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassLargeBeam",
+      "x": 696.1636962890625,
+      "y": -140.8211669921875,
+      "angle": 90.0860366821289,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassLargeBeam",
+      "x": 711.5093994140625,
+      "y": -140.79881286621094,
+      "angle": 90.0226058959961,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassLargeSquare",
+      "x": 532.8404541015625,
+      "y": -73.0217056274414,
+      "angle": -0.3811464309692383,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassLargeSquare",
+      "x": 698.3502197265625,
+      "y": -72.9859848022461,
+      "angle": 0.7834810614585876,
+      "hinged": false
+    }
+  ]
+}

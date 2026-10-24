@@ -1,0 +1,107 @@
+{
+  "file": "Four%20Times%20The%20Fun",
+  "name": "Four Times The Fun",
+  "theme": "Theme_HauntedWasteland",
+  "width": 2034.0,
+  "height": 768.0,
+  "launcherX": -625.273193359375,
+  "launcherY": -160.91427612304688,
+  "projectiles": [
+    "Projectile_Bus",
+    "Projectile_Bus",
+    "Projectile_Bus"
+  ],
+  "parts": [
+    {
+      "name": "StructurePart_LavaHalf",
+      "x": 589.9671020507812,
+      "y": -281.8857421875,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Lava",
+      "x": 839.927001953125,
+      "y": -299.3857421875,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Lava",
+      "x": 358.49371337890625,
+      "y": -304.2543029785156,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Lava",
+      "x": 35.16016387939453,
+      "y": -311.0,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumSmallBeam",
+      "x": 660.4962158203125,
+      "y": 167.1678924560547,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumSmallBeam",
+      "x": 440.24981689453125,
+      "y": 167.16795349121094,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumSmallBeam",
+      "x": 445.2013854980469,
+      "y": -63.94880676269531,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GroundBox",
+      "x": 0.0,
+      "y": -340.0,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumSmallBeam",
+      "x": 666.6070556640625,
+      "y": -63.931884765625,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Skull",
+      "x": 447.2274475097656,
+      "y": -37.67121124267578,
+      "angle": -6.971149559831247e-05,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Skull",
+      "x": 441.23095703125,
+      "y": 193.44552612304688,
+      "angle": -6.403336010407656e-05,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Skull",
+      "x": 661.6363525390625,
+      "y": 193.4455108642578,
+      "angle": -6.10993301961571e-05,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Skull",
+      "x": 667.633056640625,
+      "y": -37.654266357421875,
+      "angle": -8.854606858221814e-05,
+      "hinged": false
+    }
+  ]
+}

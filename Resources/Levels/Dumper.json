@@ -1,0 +1,114 @@
+{
+  "file": "Dumper",
+  "name": "Dumper",
+  "theme": "Theme_Iceopolis",
+  "width": 2034.0,
+  "height": 768.0,
+  "launcherX": -606.4892578125,
+  "launcherY": -184.64999389648438,
+  "projectiles": [
+    "Projectile_CrotchRocket",
+    "Projectile_CrotchRocket",
+    "Projectile_Doomstone"
+  ],
+  "parts": [
+    {
+      "name": "StructurePart_GroundBox",
+      "x": 0.0,
+      "y": -340.0,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Steel45Triangle",
+      "x": 121.165771484375,
+      "y": 128.74880981445312,
+      "angle": 315.1565246582031,
+      "hinged": true
+    },
+    {
+      "name": "StructurePart_SteelSkull",
+      "x": 121.68278503417969,
+      "y": 154.92453002929688,
+      "angle": 0.12638701498508453,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Steel45Triangle",
+      "x": 299.1134338378906,
+      "y": -69.63555908203125,
+      "angle": 315.156494140625,
+      "hinged": true
+    },
+    {
+      "name": "StructurePart_SteelSkull",
+      "x": 299.63018798828125,
+      "y": -43.45982360839844,
+      "angle": 0.12634992599487305,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Steel45Triangle",
+      "x": 491.3824157714844,
+      "y": 123.1777572631836,
+      "angle": 315.156494140625,
+      "hinged": true
+    },
+    {
+      "name": "StructurePart_SteelSkull",
+      "x": 491.89923095703125,
+      "y": 149.35350036621094,
+      "angle": 0.12618720531463623,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Lava",
+      "x": 14.13547420501709,
+      "y": -298.0,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Lava",
+      "x": 294.30950927734375,
+      "y": -298.0,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Lava",
+      "x": 585.490234375,
+      "y": -298.0,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Lava",
+      "x": -278.1083679199219,
+      "y": -298.0,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Lava",
+      "x": 875.8008422851562,
+      "y": -297.0,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_DynamiteBarrel",
+      "x": 305.5364990234375,
+      "y": 266.00518798828125,
+      "angle": 0.016749195754528046,
+      "hinged": true
+    },
+    {
+      "name": "StructurePart_BonusBomb500",
+      "x": 305.51824951171875,
+      "y": 328.38873291015625,
+      "angle": 0.016867157071828842,
+      "hinged": false
+    }
+  ]
+}
