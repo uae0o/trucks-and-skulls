@@ -4,47 +4,46 @@ workflows:
     max_build_duration: 60
     instance_type: mac_mini_m1
     environment:
-      unity: 2021.3.38f1
-      groups:
-        - apple_credentials # Configure in Codemagic web UI: App Store Connect API Key
       vars:
         BUNDLE_ID: "com.appyentertainment.trucksandskulls"
-        XCODE_WORKSPACE: "build/iOS/Unity-iPhone.xcworkspace"
+        XCODE_PROJECT: "build/iOS/Unity-iPhone.xcodeproj"
         XCODE_SCHEME: "Unity-iPhone"
       xcode: latest
       cocoapods: default
     scripts:
-      - name: Set up code signing settings on Codemagic
+      - name: Locate Unity and Execute Export
         script: |
-          keychain initialize
-          app-store-connect fetch-signing-files "$BUNDLE_ID" \
-            --type IOS_APP_DEVELOPMENT \
-            --create
-          keychain add-certificates
-          xcode-project use-profiles
-      - name: Execute Unity iOS Build
-        script: |
-          UNITY_BIN="/Applications/Unity/Hub/Editor/$UNITY_VERSION/Unity.app/Contents/MacOS/Unity"
-          $UNITY_BIN \
+          set -e
+          echo "Scanning for Unity Editor on runner..."
+          UNITY_BIN=$(find /Applications/Unity/Hub/Editor -name "Unity" -type f 2>/dev/null | head -n 1)
+          
+          if [ -z "$UNITY_BIN" ]; then
+            echo "Unity not found in default Hub path, searching /Applications..."
+            UNITY_BIN=$(find /Applications -name "Unity" -type f -path "*/Contents/MacOS/*" 2>/dev/null | head -n 1)
+          fi
+          
+          if [ -z "$UNITY_BIN" ]; then
+            echo "Installing Unity 2021.3.38f1 via Unity Hub CLI..."
+            /Applications/Unity\ Hub.app/Contents/MacOS/Unity\ Hub -- --headless install --version 2021.3.38f1
+            UNITY_BIN=$(find /Applications/Unity/Hub/Editor -name "Unity" -type f 2>/dev/null | head -n 1)
+          fi
+          
+          echo "Using Unity binary: $UNITY_BIN"
+          
+          "$UNITY_BIN" \
             -batchmode \
             -quit \
+            -nographics \
             -logFile unity_build.log \
             -projectPath . \
-            -buildTarget iOS \
-            -customBuildTarget iOS
+            -executeMethod BuildScript.BuildIOS
+            
           cat unity_build.log
       - name: Build IPA via Xcode
         script: |
           xcode-project build-ipa \
-            --project "build/iOS/Unity-iPhone.xcodeproj" \
+            --project "$XCODE_PROJECT" \
             --scheme "$XCODE_SCHEME"
     artifacts:
       - build/ios/ipa/*.ipa
       - "*.log"
-    publishing:
-      email:
-        recipients:
-          - user@example.com
-        notify:
-          success: true
-          failure: true
