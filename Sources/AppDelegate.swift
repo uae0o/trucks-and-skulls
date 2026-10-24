@@ -10,9 +10,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
         let win = UIWindow(frame: UIScreen.main.bounds)
-        win.rootViewController = GameViewController()
-        win.makeKeyAndVisible()
+        win.backgroundColor = .black
+        let vc = GameViewController()
+        win.rootViewController = vc
         self.window = win
+        win.makeKeyAndVisible()
         return true
     }
 }
