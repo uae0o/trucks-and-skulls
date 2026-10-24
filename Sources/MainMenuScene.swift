@@ -64,6 +64,9 @@ public class MainMenuScene: SKScene {
         subLabel.position = CGPoint(x: 0, y: -130)
         subLabel.zPosition = 10
         addChild(subLabel)
+
+        // Start title music
+        AudioManager.shared.playMusic()
     }
 
     private func loadTexture(named name: String) -> SKTexture? {
