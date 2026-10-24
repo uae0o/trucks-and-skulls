@@ -4,6 +4,7 @@ workflows:
     max_build_duration: 60
     instance_type: mac_mini_m1
     environment:
+      unity: 2021.3.15f1
       vars:
         BUNDLE_ID: "com.appyentertainment.trucksandskulls"
         XCODE_PROJECT: "build/iOS/Unity-iPhone.xcodeproj"
@@ -14,36 +15,66 @@ workflows:
       - name: Locate Unity and Execute Export
         script: |
           set -e
-          echo "Scanning for Unity Editor on runner..."
-          UNITY_BIN=$(find /Applications/Unity/Hub/Editor -name "Unity" -type f 2>/dev/null | head -n 1)
+          echo "Checking UNITY_HOME environment..."
+          echo "UNITY_HOME: $UNITY_HOME"
           
-          if [ -z "$UNITY_BIN" ]; then
-            echo "Unity not found in default Hub path, searching /Applications..."
+          UNITY_BIN=""
+          if [ -n "$UNITY_HOME" ] && [ -f "$UNITY_HOME/Contents/MacOS/Unity" ]; then
+            UNITY_BIN="$UNITY_HOME/Contents/MacOS/Unity"
+          elif [ -n "$UNITY_HOME" ] && [ -f "$UNITY_HOME/Unity.app/Contents/MacOS/Unity" ]; then
+            UNITY_BIN="$UNITY_HOME/Unity.app/Contents/MacOS/Unity"
+          else
+            echo "Searching for Unity binary on system..."
             UNITY_BIN=$(find /Applications -name "Unity" -type f -path "*/Contents/MacOS/*" 2>/dev/null | head -n 1)
           fi
           
           if [ -z "$UNITY_BIN" ]; then
-            echo "Installing Unity 2021.3.38f1 via Unity Hub CLI..."
-            /Applications/Unity\ Hub.app/Contents/MacOS/Unity\ Hub -- --headless install --version 2021.3.38f1
-            UNITY_BIN=$(find /Applications/Unity/Hub/Editor -name "Unity" -type f 2>/dev/null | head -n 1)
+            echo "ERROR: Unity binary could not be found!"
+            ls -la /Applications/Unity 2>/dev/null || true
+            exit 1
           fi
           
-          echo "Using Unity binary: $UNITY_BIN"
+          echo "Found Unity at: $UNITY_BIN"
           
+          echo "Running Unity batchmode iOS export..."
           "$UNITY_BIN" \
             -batchmode \
             -quit \
             -nographics \
             -logFile unity_build.log \
             -projectPath . \
-            -executeMethod BuildScript.BuildIOS
+            -executeMethod BuildScript.BuildIOS || true
             
+          echo "=== UNITY BUILD LOG ==="
           cat unity_build.log
-      - name: Build IPA via Xcode
+          
+          if [ ! -d "build/iOS/Unity-iPhone.xcodeproj" ]; then
+            echo "ERROR: Xcode project was not generated! Inspect unity_build.log above."
+            exit 1
+          fi
+          echo "Xcode project successfully created at build/iOS/Unity-iPhone.xcodeproj"
+      - name: Build and Package IPA via Xcode
         script: |
-          xcode-project build-ipa \
-            --project "$XCODE_PROJECT" \
-            --scheme "$XCODE_SCHEME"
+          set -e
+          echo "Compiling Xcode project..."
+          xcodebuild \
+            -project "$XCODE_PROJECT" \
+            -scheme "$XCODE_SCHEME" \
+            -sdk iphoneos \
+            -configuration Release \
+            -derivedDataPath "build/derivedData" \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO \
+            clean build
+            
+          echo "Packaging into IPA..."
+          mkdir -p build/Payload
+          cp -r build/derivedData/Build/Products/Release-iphoneos/*.app build/Payload/
+          cd build
+          zip -r TrucksAndSkulls.ipa Payload
+          cd ..
+          echo "IPA created successfully at build/TrucksAndSkulls.ipa!"
     artifacts:
-      - build/ios/ipa/*.ipa
+      - build/*.ipa
       - "*.log"
