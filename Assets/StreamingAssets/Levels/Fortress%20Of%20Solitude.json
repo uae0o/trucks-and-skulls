@@ -1,0 +1,523 @@
+{
+  "file": "Fortress%20Of%20Solitude",
+  "name": "Fortress of Solitude",
+  "theme": "Theme_Iceopolis",
+  "width": 2034.0,
+  "height": 768.0,
+  "launcherX": -606.4892578125,
+  "launcherY": -184.64999389648438,
+  "projectiles": [
+    "Projectile_Doomstone",
+    "Projectile_Doomstone",
+    "Projectile_Doomstone",
+    "Projectile_Doomstone",
+    "Projectile_Doomstone",
+    "Projectile_Doomstone"
+  ],
+  "parts": [
+    {
+      "name": "StructurePart_GroundBox",
+      "x": 0.0,
+      "y": -340.0,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassDoubleBeam",
+      "x": 425.93609619140625,
+      "y": -230.68482971191406,
+      "angle": 269.9731140136719,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassDoubleBeam",
+      "x": 668.1185302734375,
+      "y": -230.70037841796875,
+      "angle": 269.9936218261719,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassDoubleBeam",
+      "x": 698.3782958984375,
+      "y": -230.6998291015625,
+      "angle": 269.991943359375,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassDoubleBeam",
+      "x": 940.5126953125,
+      "y": -230.70022583007812,
+      "angle": 270.0006408691406,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassDoubleBeam",
+      "x": 456.2607116699219,
+      "y": -140.3822784423828,
+      "angle": 269.913818359375,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassDoubleBeam",
+      "x": 637.8824462890625,
+      "y": -140.3958282470703,
+      "angle": 269.9726257324219,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassDoubleBeam",
+      "x": 668.1365966796875,
+      "y": -140.3914031982422,
+      "angle": 269.9684753417969,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassDoubleBeam",
+      "x": 698.3905639648438,
+      "y": -140.3947296142578,
+      "angle": 269.9653015136719,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassDoubleBeam",
+      "x": 728.6463623046875,
+      "y": -140.39735412597656,
+      "angle": 269.9671325683594,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassDoubleBeam",
+      "x": 910.2730712890625,
+      "y": -140.39892578125,
+      "angle": 269.9906311035156,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassDoubleBeam",
+      "x": 486.7950134277344,
+      "y": -50.06511306762695,
+      "angle": 269.7671203613281,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassDoubleBeam",
+      "x": 608.4785766601562,
+      "y": -50.095272064208984,
+      "angle": 270.01806640625,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassDoubleBeam",
+      "x": 758.1275634765625,
+      "y": -50.104923248291016,
+      "angle": 269.959716796875,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassDoubleBeam",
+      "x": 879.728515625,
+      "y": -50.10745620727539,
+      "angle": 269.998046875,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassDoubleBeam",
+      "x": 517.4163208007812,
+      "y": 40.22704315185547,
+      "angle": 269.8273010253906,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassDoubleBeam",
+      "x": 578.3419799804688,
+      "y": 40.224361419677734,
+      "angle": 269.8902282714844,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassDoubleBeam",
+      "x": 788.6929321289062,
+      "y": 40.17354965209961,
+      "angle": 269.9524230957031,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassDoubleBeam",
+      "x": 849.614501953125,
+      "y": 40.1932373046875,
+      "angle": 269.9822998046875,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassDoubleBeam",
+      "x": 548.2733154296875,
+      "y": 130.49082946777344,
+      "angle": 269.818603515625,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassDoubleBeam",
+      "x": 819.17529296875,
+      "y": 130.42649841308594,
+      "angle": 269.93231201171875,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelSkull",
+      "x": 684.12939453125,
+      "y": -69.20311737060547,
+      "angle": -0.08343041688203812,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelDoubleBeam",
+      "x": 395.6422119140625,
+      "y": -230.64073181152344,
+      "angle": 269.9730224609375,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelDoubleBeam",
+      "x": 425.9654235839844,
+      "y": -140.32489013671875,
+      "angle": 269.9122619628906,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelDoubleBeam",
+      "x": 456.50006103515625,
+      "y": -50.047706604003906,
+      "angle": 269.76885986328125,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelDoubleBeam",
+      "x": 487.08428955078125,
+      "y": 40.23328399658203,
+      "angle": 269.7810974121094,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelDoubleBeam",
+      "x": 517.6536865234375,
+      "y": 130.52452087402344,
+      "angle": 269.8251647949219,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelDoubleBeam",
+      "x": 548.50927734375,
+      "y": 220.78781127929688,
+      "angle": 269.810546875,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelDoubleBeam",
+      "x": 578.6783447265625,
+      "y": 130.523193359375,
+      "angle": 269.8761901855469,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelDoubleBeam",
+      "x": 608.8748779296875,
+      "y": 40.20927047729492,
+      "angle": 269.9955749511719,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelDoubleBeam",
+      "x": 758.2968139648438,
+      "y": 40.19338607788086,
+      "angle": 269.953369140625,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelDoubleBeam",
+      "x": 788.7169189453125,
+      "y": 130.47096252441406,
+      "angle": 269.9479064941406,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelDoubleBeam",
+      "x": 819.1202392578125,
+      "y": 220.72116088867188,
+      "angle": 269.9315185546875,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelDoubleBeam",
+      "x": 849.5775756835938,
+      "y": 130.49087524414062,
+      "angle": 269.9770202636719,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelDoubleBeam",
+      "x": 880.0445556640625,
+      "y": 40.2027587890625,
+      "angle": 270.0410461425781,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelDoubleBeam",
+      "x": 910.05078125,
+      "y": -50.097999572753906,
+      "angle": 269.9985046386719,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelDoubleBeam",
+      "x": 940.5654296875,
+      "y": -140.29420471191406,
+      "angle": 269.99102783203125,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelDoubleBeam",
+      "x": 970.8043823242188,
+      "y": -230.61622619628906,
+      "angle": 270.0013732910156,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelDoubleBeam",
+      "x": 638.927490234375,
+      "y": -50.0687370300293,
+      "angle": 270.0860595703125,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelDoubleBeam",
+      "x": 727.6929321289062,
+      "y": -50.08207321166992,
+      "angle": 269.9034118652344,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 547.0977172851562,
+      "y": -140.41061401367188,
+      "angle": 269.94622802734375,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 547.4722900390625,
+      "y": -50.092918395996094,
+      "angle": 269.86846923828125,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 547.7660522460938,
+      "y": 40.198326110839844,
+      "angle": 269.83636474609375,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 516.7845458984375,
+      "y": -230.69509887695312,
+      "angle": 269.97515869140625,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 516.8336181640625,
+      "y": -140.3855438232422,
+      "angle": 269.9259033203125,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 517.1552734375,
+      "y": -50.06776809692383,
+      "angle": 269.84716796875,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 577.3323974609375,
+      "y": -230.70425415039062,
+      "angle": 269.98114013671875,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 577.3578491210938,
+      "y": -140.41477966308594,
+      "angle": 269.9664611816406,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 577.862548828125,
+      "y": -50.0758056640625,
+      "angle": 269.90704345703125,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 486.50494384765625,
+      "y": -230.6983184814453,
+      "angle": 269.97576904296875,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 486.5501708984375,
+      "y": -140.39404296875,
+      "angle": 269.92047119140625,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 607.6028442382812,
+      "y": -230.697998046875,
+      "angle": 269.98187255859375,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 607.6256103515625,
+      "y": -140.4006805419922,
+      "angle": 269.9769287109375,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 456.22296142578125,
+      "y": -230.69522094726562,
+      "angle": 269.97564697265625,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 637.862060546875,
+      "y": -230.7013702392578,
+      "angle": 269.9945373535156,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 819.4195556640625,
+      "y": -230.70925903320312,
+      "angle": 269.9905700683594,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 789.156982421875,
+      "y": -230.70516967773438,
+      "angle": 269.98870849609375,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 849.68701171875,
+      "y": -230.6998291015625,
+      "angle": 269.9905700683594,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 758.8998413085938,
+      "y": -230.6999053955078,
+      "angle": 269.986572265625,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 879.954833984375,
+      "y": -230.70204162597656,
+      "angle": 269.99749755859375,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 728.6392211914062,
+      "y": -230.6986846923828,
+      "angle": 269.9875183105469,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 910.22998046875,
+      "y": -230.7011260986328,
+      "angle": 270.0014343261719,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 819.4320068359375,
+      "y": -140.42787170410156,
+      "angle": 269.9670104980469,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 789.166748046875,
+      "y": -140.41342163085938,
+      "angle": 269.969970703125,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 849.707763671875,
+      "y": -140.40234375,
+      "angle": 269.9809265136719,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 758.9049072265625,
+      "y": -140.40118408203125,
+      "angle": 269.97296142578125,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 879.9889526367188,
+      "y": -140.40367126464844,
+      "angle": 269.9894714355469,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 818.9281005859375,
+      "y": -50.14455795288086,
+      "angle": 269.9399108886719,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 788.5357055664062,
+      "y": -50.119205474853516,
+      "angle": 269.9609375,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 849.311767578125,
+      "y": -50.10509490966797,
+      "angle": 269.9768371582031,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 819.0894775390625,
+      "y": 40.14106750488281,
+      "angle": 269.92889404296875,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneDoubleBeam",
+      "x": 547.0604858398438,
+      "y": -230.70191955566406,
+      "angle": 269.9794006347656,
+      "hinged": false
+    }
+  ]
+}

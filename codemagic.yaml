@@ -1,0 +1,50 @@
+workflows:
+  unity-ios:
+    name: Trucks and Skulls iOS Build
+    max_build_duration: 60
+    instance_type: mac_mini_m1
+    environment:
+      unity: 2021.3.38f1
+      groups:
+        - apple_credentials # Configure in Codemagic web UI: App Store Connect API Key
+      vars:
+        BUNDLE_ID: "com.appyentertainment.trucksandskulls"
+        XCODE_WORKSPACE: "build/iOS/Unity-iPhone.xcworkspace"
+        XCODE_SCHEME: "Unity-iPhone"
+      xcode: latest
+      cocoapods: default
+    scripts:
+      - name: Set up code signing settings on Codemagic
+        script: |
+          keychain initialize
+          app-store-connect fetch-signing-files "$BUNDLE_ID" \
+            --type IOS_APP_DEVELOPMENT \
+            --create
+          keychain add-certificates
+          xcode-project use-profiles
+      - name: Execute Unity iOS Build
+        script: |
+          UNITY_BIN="/Applications/Unity/Hub/Editor/$UNITY_VERSION/Unity.app/Contents/MacOS/Unity"
+          $UNITY_BIN \
+            -batchmode \
+            -quit \
+            -logFile unity_build.log \
+            -projectPath . \
+            -buildTarget iOS \
+            -customBuildTarget iOS
+          cat unity_build.log
+      - name: Build IPA via Xcode
+        script: |
+          xcode-project build-ipa \
+            --project "build/iOS/Unity-iPhone.xcodeproj" \
+            --scheme "$XCODE_SCHEME"
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - "*.log"
+    publishing:
+      email:
+        recipients:
+          - user@example.com
+        notify:
+          success: true
+          failure: true

@@ -1,0 +1,100 @@
+{
+  "file": "Gapping",
+  "name": "Gapping",
+  "theme": "Theme_Iceopolis",
+  "width": 2034.0,
+  "height": 768.0,
+  "launcherX": -606.4892578125,
+  "launcherY": -184.64999389648438,
+  "projectiles": [
+    "Projectile_Doomstone",
+    "Projectile_Doomstone",
+    "Projectile_CrotchRocket"
+  ],
+  "parts": [
+    {
+      "name": "StructurePart_GroundBox",
+      "x": 0.0,
+      "y": -340.0,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_DynamiteBarrel",
+      "x": 282.2574462890625,
+      "y": 134.41790771484375,
+      "angle": 0.05799700319766998,
+      "hinged": true
+    },
+    {
+      "name": "StructurePart_BonusBomb100",
+      "x": 282.19403076171875,
+      "y": 196.8024444580078,
+      "angle": 0.058551203459501266,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_DynamiteBarrel",
+      "x": 642.71240234375,
+      "y": -93.19065856933594,
+      "angle": 0.058052293956279755,
+      "hinged": true
+    },
+    {
+      "name": "StructurePart_BonusBomb100",
+      "x": 642.6495971679688,
+      "y": -30.806129455566406,
+      "angle": 0.05854946747422218,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_DynamiteBarrel",
+      "x": -9.4678955078125,
+      "y": -93.19088745117188,
+      "angle": 0.058037638664245605,
+      "hinged": true
+    },
+    {
+      "name": "StructurePart_BonusBomb100",
+      "x": -9.531248092651367,
+      "y": -30.80613136291504,
+      "angle": 0.05855110287666321,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Skull",
+      "x": 131.682373046875,
+      "y": 50.20988464355469,
+      "angle": -1.1165591021211618e-12,
+      "hinged": true
+    },
+    {
+      "name": "StructurePart_Skull",
+      "x": 444.5327453613281,
+      "y": 50.20988464355469,
+      "angle": -1.1165591021211618e-12,
+      "hinged": true
+    },
+    {
+      "name": "StructurePart_Skull",
+      "x": 284.73504638671875,
+      "y": -210.5833282470703,
+      "angle": -3.799879240488472e-23,
+      "hinged": true
+    },
+    {
+      "name": "StructurePart_SteelLargeSquare",
+      "x": 286.7574768066406,
+      "y": -168.0557098388672,
+      "angle": 0.0,
+      "hinged": true
+    },
+    {
+      "name": "StructurePart_ToxicWasteBarrel",
+      "x": 440.5551452636719,
+      "y": -170.55572509765625,
+      "angle": -3.027536976674128e-08,
+      "hinged": true
+    }
+  ]
+}

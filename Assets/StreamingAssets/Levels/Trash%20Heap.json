@@ -1,0 +1,464 @@
+{
+  "file": "Trash%20Heap",
+  "name": "Trash Heap",
+  "theme": "Theme_HauntedWasteland",
+  "width": 2034.0,
+  "height": 768.0,
+  "launcherX": -692.1802368164062,
+  "launcherY": -147.41464233398438,
+  "projectiles": [
+    "Projectile_CrotchRocket",
+    "Projectile_CrotchRocket",
+    "Projectile_CrotchRocket"
+  ],
+  "parts": [
+    {
+      "name": "StructurePart_GlassLargeSquare",
+      "x": 535.90771484375,
+      "y": -229.85064697265625,
+      "angle": 90.0053939819336,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumLargeSquare",
+      "x": 208.91845703125,
+      "y": -253.59999084472656,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumLargeSquare",
+      "x": 581.2061767578125,
+      "y": -253.59999084472656,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumLargeSquare",
+      "x": 208.91845703125,
+      "y": -208.69996643066406,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumLargeSquare",
+      "x": 208.91845703125,
+      "y": -163.7999725341797,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumLargeSquare",
+      "x": 581.2061767578125,
+      "y": -208.69996643066406,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumLargeSquare",
+      "x": 581.2061767578125,
+      "y": -178.90570068359375,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumLargeSquare",
+      "x": 208.91845703125,
+      "y": -118.89994812011719,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumLargeSquare",
+      "x": 581.2061767578125,
+      "y": -134.0056915283203,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumLargeSquare",
+      "x": 581.2061767578125,
+      "y": -89.10567474365234,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumLargeSquare",
+      "x": 208.91845703125,
+      "y": -73.99992370605469,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumLargeSquare",
+      "x": 581.2061767578125,
+      "y": -53.96848678588867,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumLargeSquare",
+      "x": 208.91845703125,
+      "y": -29.09992027282715,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumLargeSquare",
+      "x": 581.2061767578125,
+      "y": -9.068487167358398,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumLargeSquare",
+      "x": 208.91845703125,
+      "y": 15.800084114074707,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumLargeSquare",
+      "x": 581.2061767578125,
+      "y": 35.831512451171875,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumLargeSquare",
+      "x": 208.91845703125,
+      "y": 150.5001220703125,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumLargeSquare",
+      "x": 208.91845703125,
+      "y": 105.6001205444336,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_DynamiteBarrel",
+      "x": 330.7142639160156,
+      "y": -187.34275817871094,
+      "angle": 22.654258728027344,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_DynamiteBarrel",
+      "x": 446.5765380859375,
+      "y": -188.63731384277344,
+      "angle": -39.53784942626953,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_DynamiteBarrel",
+      "x": 265.4116516113281,
+      "y": -151.7196044921875,
+      "angle": -56.07151412963867,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassLargeCircle",
+      "x": 287.65325927734375,
+      "y": -185.39627075195312,
+      "angle": 67.49243927001953,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassLargeCircle",
+      "x": 490.0527648925781,
+      "y": -254.86968994140625,
+      "angle": 45.2596321105957,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassLargeSquare",
+      "x": 361.5163879394531,
+      "y": -155.63845825195312,
+      "angle": -67.07929229736328,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassLargeSquare",
+      "x": 296.56573486328125,
+      "y": -234.8940887451172,
+      "angle": 39.653438568115234,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelMediumCircle",
+      "x": 462.6324768066406,
+      "y": -224.1892852783203,
+      "angle": 22.75948143005371,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelMediumSquare",
+      "x": 413.8206481933594,
+      "y": -264.20953369140625,
+      "angle": -0.027078164741396904,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneLargeCircle",
+      "x": 382.404052734375,
+      "y": -195.86172485351562,
+      "angle": 5.326303005218506,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_WoodLargeCircle",
+      "x": 447.42388916015625,
+      "y": -254.94921875,
+      "angle": 0.0699407160282135,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_WoodLargeSquare",
+      "x": 418.35491943359375,
+      "y": -220.75082397460938,
+      "angle": 50.305580139160156,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_WoodSmallBeam",
+      "x": 243.52613830566406,
+      "y": -228.08843994140625,
+      "angle": -0.06484454870223999,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_WoodSmallBeam",
+      "x": 239.1921844482422,
+      "y": -171.63961791992188,
+      "angle": 90.11637115478516,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_DynamiteBarrel",
+      "x": 382.8146057128906,
+      "y": -255.7412109375,
+      "angle": -0.022063836455345154,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_DynamiteBarrel",
+      "x": 249.70907592773438,
+      "y": -255.7595672607422,
+      "angle": 0.016897864639759064,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassLargeBeam",
+      "x": 480.19061279296875,
+      "y": -162.0541229248047,
+      "angle": -13.295063972473145,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassLargeSquare",
+      "x": 492.406005859375,
+      "y": -198.43031311035156,
+      "angle": 70.15035247802734,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_WoodMediumSquare",
+      "x": 354.01739501953125,
+      "y": -121.60163879394531,
+      "angle": 22.90007209777832,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_WoodSmallBeam",
+      "x": 391.25372314453125,
+      "y": -56.563880920410156,
+      "angle": -14.226656913757324,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_WoodLargeSquare",
+      "x": 492.4173583984375,
+      "y": -40.260013580322266,
+      "angle": -97.04127502441406,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_WoodLargeCircle",
+      "x": 390.0071716308594,
+      "y": -85.73457336425781,
+      "angle": 75.73230743408203,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_WoodMediumCircle",
+      "x": 243.96615600585938,
+      "y": -130.18222045898438,
+      "angle": 258.9482421875,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassMediumCircle",
+      "x": 546.7503051757812,
+      "y": -264.1651611328125,
+      "angle": -0.0011465513380244374,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumLargeSquare",
+      "x": 208.91845703125,
+      "y": 60.70008850097656,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelLargeSquare",
+      "x": 439.2547912597656,
+      "y": -103.89224243164062,
+      "angle": 19.12020492553711,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelMediumSquare",
+      "x": 328.6061096191406,
+      "y": -121.74004364013672,
+      "angle": 17.385461807250977,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelSmallBeam",
+      "x": 368.4634094238281,
+      "y": -105.39260864257812,
+      "angle": -59.33791732788086,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassLargeSquare",
+      "x": 352.5079040527344,
+      "y": -56.7636833190918,
+      "angle": -14.751617431640625,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GroundBox",
+      "x": 0.0,
+      "y": -340.0,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassDoubleBeam",
+      "x": 360.0533752441406,
+      "y": -19.676843643188477,
+      "angle": -14.732417106628418,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassLargeSquare",
+      "x": 488.83612060546875,
+      "y": -85.42411041259766,
+      "angle": 82.93962860107422,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassLargeCircle",
+      "x": 292.0235900878906,
+      "y": -117.71067810058594,
+      "angle": -11.194901466369629,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassDoubleBeam",
+      "x": 511.2603759765625,
+      "y": -130.66256713867188,
+      "angle": -12.910725593566895,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_DynamiteBarrel",
+      "x": 428.8824157714844,
+      "y": -64.35858917236328,
+      "angle": -70.92289733886719,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassDoubleBeam",
+      "x": 310.05487060546875,
+      "y": -84.65583801269531,
+      "angle": -14.744614601135254,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_StoneLargeSquare",
+      "x": 399.7711181640625,
+      "y": -130.00538635253906,
+      "angle": 22.831005096435547,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_WoodLargeSquare",
+      "x": 533.6047973632812,
+      "y": -94.54265594482422,
+      "angle": -6.260839939117432,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_WoodMediumCircle",
+      "x": 414.8432922363281,
+      "y": -37.64274978637695,
+      "angle": -70.98968505859375,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassLargeBeam",
+      "x": 506.59088134765625,
+      "y": -152.69528198242188,
+      "angle": -13.071624755859375,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Skull",
+      "x": 312.5690002441406,
+      "y": -152.91644287109375,
+      "angle": -22.442319869995117,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Skull",
+      "x": 335.113037109375,
+      "y": -257.2460632324219,
+      "angle": -0.027296144515275955,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Skull",
+      "x": 413.9010314941406,
+      "y": -170.37229919433594,
+      "angle": 140.9431915283203,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Skull",
+      "x": 539.93115234375,
+      "y": -188.59866333007812,
+      "angle": 44.93616485595703,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Skull",
+      "x": 250.1607666015625,
+      "y": -201.87767028808594,
+      "angle": -0.05307093635201454,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Skull",
+      "x": 351.7976379394531,
+      "y": -222.03326416015625,
+      "angle": 6.432029724121094,
+      "hinged": false
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "file": "El%20Gato",
+  "name": "El Gato",
+  "theme": "Theme_IndustrialArm",
+  "width": 2034.0,
+  "height": 768.0,
+  "launcherX": -606.4892578125,
+  "launcherY": -184.64999389648438,
+  "projectiles": [
+    "Projectile_Dart",
+    "Projectile_Dart",
+    "Projectile_Bus",
+    "Projectile_Bus"
+  ],
+  "parts": [
+    {
+      "name": "StructurePart_SteelDoubleBeam",
+      "x": 308.4036865234375,
+      "y": -230.83590698242188,
+      "angle": 89.84152221679688,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Indestructium45Triangle",
+      "x": 507.4233703613281,
+      "y": 121.91714477539062,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassVeryLongBeam",
+      "x": 434.3788146972656,
+      "y": -178.70196533203125,
+      "angle": 0.03936221823096275,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassDoubleBeam",
+      "x": 531.54296875,
+      "y": -230.69644165039062,
+      "angle": 89.96046447753906,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassVeryLongBeam",
+      "x": 434.6175842285156,
+      "y": -167.81008911132812,
+      "angle": 0.03502712398767471,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Indestructium45TriangleFlipped",
+      "x": 346.245849609375,
+      "y": 121.91714477539062,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassDoubleBeam",
+      "x": 340.0625305175781,
+      "y": -230.8409881591797,
+      "angle": 89.86972045898438,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumLargeBeam",
+      "x": 592.8966064453125,
+      "y": -82.8829116821289,
+      "angle": 45.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumLargeBeam",
+      "x": 617.2921752929688,
+      "y": -131.63717651367188,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumLargeBeam",
+      "x": 257.8697204589844,
+      "y": -85.30570220947266,
+      "angle": 315.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_IndestructiumLargeBeam",
+      "x": 244.68521118164062,
+      "y": -136.50570678710938,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassDoubleBeam",
+      "x": 278.14141845703125,
+      "y": -230.67080688476562,
+      "angle": 89.86930084228516,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GlassDoubleBeam",
+      "x": 592.2960205078125,
+      "y": -230.681640625,
+      "angle": 90.05712127685547,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelDoubleBeam",
+      "x": 562.0138549804688,
+      "y": -230.82566833496094,
+      "angle": 90.07743072509766,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_GroundBox",
+      "x": 0.0,
+      "y": -340.0,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelSkull",
+      "x": 435.9079284667969,
+      "y": -249.82972717285156,
+      "angle": -0.008821483701467514,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelSkull",
+      "x": 383.567626953125,
+      "y": -249.77586364746094,
+      "angle": 0.01481875590980053,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Skull",
+      "x": 462.1239013671875,
+      "y": -212.7772674560547,
+      "angle": 0.013421806506812572,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Skull",
+      "x": 409.68243408203125,
+      "y": -212.7145538330078,
+      "angle": 0.4576495587825775,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelSkull",
+      "x": 488.33349609375,
+      "y": -249.7781982421875,
+      "angle": -0.21642327308654785,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_BoilerMedium",
+      "x": 421.4978332519531,
+      "y": -60.94000244140625,
+      "angle": 0.0,
+      "hinged": false
+    }
+  ]
+}

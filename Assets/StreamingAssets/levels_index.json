@@ -1,0 +1,2144 @@
+[
+  {
+    "file": "Ambush",
+    "name": "Ambush",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 75,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Arachnoid",
+    "name": "Arachnoid",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 117,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Armored%20Cannon",
+    "name": "Armored Cannon",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 92,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Armored%20Gas",
+    "name": "Armored Gas",
+    "theme": "Theme_DemonTown",
+    "partsCount": 80,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Atmosfear",
+    "name": "Atmosfear",
+    "theme": "Theme_Moon",
+    "partsCount": 65,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Back%20Wall",
+    "name": "Back Wall",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 51,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Bang%20Through",
+    "name": "Bang Through",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 39,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Bank%20Heist",
+    "name": "Bank Heist",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 49,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Bank%20Shot",
+    "name": "Bank Shot",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 37,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Barnes%20Wallis",
+    "name": "Barnes Wallis",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 50,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Bash%20N%20Smash",
+    "name": "Bash N Smash",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 103,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Batadactyl",
+    "name": "Batadactyl",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 161,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Beast",
+    "name": "Beast",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 79,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Below%200",
+    "name": "Below 0",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 33,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Blast%20Off",
+    "name": "Blast Off",
+    "theme": "Theme_Moon",
+    "partsCount": 66,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Blastphemer",
+    "name": "Blastphemer",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 56,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Block%20Buster",
+    "name": "Block Buster",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 47,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Boiled%20Over",
+    "name": "Boiled Over",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 20,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Bombing%20Out",
+    "name": "Bombing Out",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 48,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Bombs%20Away",
+    "name": "Bombs Away",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 36,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Bone%20Cologne",
+    "name": "Bone Cologne",
+    "theme": "Theme_Moon",
+    "partsCount": 60,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Bonus%20Bombardment",
+    "name": "Bonus Bombardment",
+    "theme": "Theme_DemonTown",
+    "partsCount": 91,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Boombah",
+    "name": "Boombah",
+    "theme": "Theme_Moon",
+    "partsCount": 70,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Bounce%20Bounce",
+    "name": "Bounce Bounce",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 58,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Bounce%20House",
+    "name": "Bounce House",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 49,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Boxed%20In",
+    "name": "Boxed In",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 23,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Braces",
+    "name": "Braces",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 96,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Break%20It%20Down",
+    "name": "Break it down",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 57,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Break%20Through",
+    "name": "Break Through",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 39,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Broken%20Arm",
+    "name": "Broken Arm",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 63,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Brute%20Force",
+    "name": "Brute Force",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 46,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Bubble%20Dome",
+    "name": "Bubble Dome",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 155,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Bubu",
+    "name": "Bubu",
+    "theme": "Theme_DemonTown",
+    "partsCount": 74,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Buffalo",
+    "name": "Buffalo",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 68,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Bullseye",
+    "name": "Bullseye",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 37,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Bunker%20Buster",
+    "name": "Bunker Buster",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 46,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Bustin%20Bricks%20Baby",
+    "name": "Bustin Bricks Baby",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 78,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Cant%20Touch%20This",
+    "name": "Cant Touch This",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 128,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Carnage%20Park",
+    "name": "Carnage Park",
+    "theme": "Theme_DemonTown",
+    "partsCount": 80,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Carnal%20Nature",
+    "name": "Carnal Nature",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 68,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Carpet%20Bomb",
+    "name": "Carpet Bomb",
+    "theme": "Theme_Moon",
+    "partsCount": 57,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Castle%20Walls",
+    "name": "Castle Walls",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 27,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Cat%20Flap%20Fever",
+    "name": "Cat Flap Fever",
+    "theme": "Theme_DemonTown",
+    "partsCount": 58,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Catfish%20Rex",
+    "name": "Catfish Rex",
+    "theme": "Theme_Moon",
+    "partsCount": 95,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Cleaning%20House",
+    "name": "Cleaning House",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 157,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Clothes%20Line",
+    "name": "Clothes Line",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 51,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Cold%20Breeze",
+    "name": "Cold Breeze",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 37,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Cold%20Shoulder",
+    "name": "Cold Shoulder",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 67,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Compactor",
+    "name": "Compactor",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 112,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Cookie%20Jar",
+    "name": "Cookie Jar",
+    "theme": "Theme_DemonTown",
+    "partsCount": 59,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Count%20On%20It",
+    "name": "Count On It",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 137,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Crash%20Pad",
+    "name": "Crash Pad",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 61,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Cube%20Farm",
+    "name": "Cube Farm",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 74,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Darkness",
+    "name": "Darkness",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 60,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Dead%20Bob",
+    "name": "Dead Bob",
+    "theme": "Theme_DemonTown",
+    "partsCount": 50,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Deception",
+    "name": "Deception",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 81,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Defending%20Uranus",
+    "name": "Defending Uranus",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 66,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Demon%20Drop",
+    "name": "Demon Drop",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 55,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Demon%20Skull",
+    "name": "Demon Skull",
+    "theme": "Theme_DemonTown",
+    "partsCount": 42,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Demon%20Slide",
+    "name": "Demon Slide",
+    "theme": "Theme_DemonTown",
+    "partsCount": 70,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Destroy%20Skulls",
+    "name": "Destroy Skulls",
+    "theme": "Theme_Moon",
+    "partsCount": 100,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Dethroned",
+    "name": "Dethroned",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 72,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Devide",
+    "name": "Devide",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 11,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Dont%20Look%20Back",
+    "name": "Dont Look Back",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 81,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Double%20Barreled",
+    "name": "Double Barreled",
+    "theme": "Theme_DemonTown",
+    "partsCount": 43,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Double%20Tap",
+    "name": "Double Tap",
+    "theme": "Theme_DemonTown",
+    "partsCount": 61,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Drawbridge",
+    "name": "Drawbridge",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 49,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Drop%20Zone%20Deux",
+    "name": "Drop Zone Deux",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 28,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Drop%20Zone",
+    "name": "Drop Zone",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 16,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Dumb%20And%20Rubberer",
+    "name": "Dumb And Rubberer",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 64,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Dumper",
+    "name": "Dumper",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 14,
+    "projectilesCount": 3
+  },
+  {
+    "file": "El%20Gato",
+    "name": "El Gato",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 21,
+    "projectilesCount": 4
+  },
+  {
+    "file": "El%20Skull",
+    "name": "El Skull",
+    "theme": "Theme_Moon",
+    "partsCount": 150,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Experiment%20665",
+    "name": "Experiment 665",
+    "theme": "Theme_DemonTown",
+    "partsCount": 46,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Explosive%20Business",
+    "name": "Explosive Business",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 37,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Extremely%20Small%20Towers",
+    "name": "Extremely Small Towers",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 125,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Eye%20Of%20Needle",
+    "name": "Eye Of Needle",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 63,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Fab%204",
+    "name": "Fab 4",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 41,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Face%20Melter",
+    "name": "Face Melter",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 62,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Face%20Off",
+    "name": "Face Off",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 78,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Fang%20Decay",
+    "name": "Fang Decay",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 67,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Fatty%20Towers",
+    "name": "Fatty Towers",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 162,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Fire%20in%20the%20Holes",
+    "name": "Fire in the Holes",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 60,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Firing%20Sequence",
+    "name": "Firing Sequence",
+    "theme": "Theme_DemonTown",
+    "partsCount": 56,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Floating%20Skulls",
+    "name": "Floating Skulls",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 24,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Fog%20of%20War",
+    "name": "Fog of War",
+    "theme": "Theme_Moon",
+    "partsCount": 74,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Fortified%20Mechanics",
+    "name": "Fortified Mechanics",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 131,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Fortnight",
+    "name": "Fortnight",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 50,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Fortress%20Of%20Bang",
+    "name": "Fortress Of Bang",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 80,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Fortress%20Of%20Solitude",
+    "name": "Fortress of Solitude",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 72,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Four%20Horsemen",
+    "name": "Four Horsemen",
+    "theme": "Theme_DemonTown",
+    "partsCount": 23,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Four%20Times%20The%20Fun",
+    "name": "Four Times The Fun",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 13,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Frankenstein",
+    "name": "Frankenstein",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 52,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Frigid",
+    "name": "Frigid",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 128,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Fuelish",
+    "name": "Fuelish",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 62,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Gapping",
+    "name": "Gapping",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 12,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Garbage%20Disposal",
+    "name": "Garbage Disposal",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 87,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Gas%20Station",
+    "name": "Gas Station",
+    "theme": "Theme_Moon",
+    "partsCount": 141,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Glass%20Eye",
+    "name": "Glass Eye",
+    "theme": "Theme_DemonTown",
+    "partsCount": 31,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Glass%20Houses",
+    "name": "Glass Houses",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 84,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Glassy",
+    "name": "Glassy",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 48,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Gone%20Phishing",
+    "name": "Gone Phishing",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 50,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Graveyard",
+    "name": "Graveyard",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 55,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Great%20Escape",
+    "name": "Great Escape",
+    "theme": "Theme_DemonTown",
+    "partsCount": 54,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Great%20Skullamid",
+    "name": "Great Skullamid",
+    "theme": "Theme_DemonTown",
+    "partsCount": 78,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Gridlock",
+    "name": "Gridlock",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 53,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Ground%20Control",
+    "name": "Ground Control",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 47,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Guide%20Line",
+    "name": "Guide Line",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 31,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Gun%20Show",
+    "name": "Gun Show",
+    "theme": "Theme_Moon",
+    "partsCount": 122,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Gunsmith",
+    "name": "Gunsmith",
+    "theme": "Theme_DemonTown",
+    "partsCount": 69,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Gymnast",
+    "name": "Gymnast",
+    "theme": "Theme_Moon",
+    "partsCount": 32,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Hard%20Boiled",
+    "name": "Hard Boiled",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 38,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Harvest%20Field",
+    "name": "Harvest Field",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 35,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Hellacious",
+    "name": "Hellacious",
+    "theme": "Theme_DemonTown",
+    "partsCount": 72,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Hellapede",
+    "name": "Hellapede",
+    "theme": "Theme_DemonTown",
+    "partsCount": 167,
+    "projectilesCount": 6
+  },
+  {
+    "file": "High%20Dive",
+    "name": "High Dive",
+    "theme": "Theme_DemonTown",
+    "partsCount": 82,
+    "projectilesCount": 3
+  },
+  {
+    "file": "High%20Five",
+    "name": "High Five",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 70,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Hollywood%20Skulls",
+    "name": "Hollywood Skulls",
+    "theme": "Theme_Moon",
+    "partsCount": 118,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Home%20Brew",
+    "name": "Home Brew",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 97,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Hoop%20Dream",
+    "name": "Hoop Dream",
+    "theme": "Theme_Moon",
+    "partsCount": 77,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Hot%20Drop",
+    "name": "Hot Drop",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 72,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Hot%20Spurt",
+    "name": "Hot Spurt",
+    "theme": "Theme_DemonTown",
+    "partsCount": 44,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Husband%20Or%20The%20Wife",
+    "name": "Husband Or The Wife",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 66,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Ice%20Block",
+    "name": "Ice Block",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 38,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Ice%20Cold",
+    "name": "Ice Cold",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 37,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Ice%20Diver",
+    "name": "Ice Diver",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 40,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Ice%20Pick",
+    "name": "Ice Pick",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 17,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Ice%20Train",
+    "name": "Ice Train",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 79,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Iceberg",
+    "name": "Iceberg",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 82,
+    "projectilesCount": 4
+  },
+  {
+    "file": "In%20Case%20of%20Fire",
+    "name": "In Case of Fire",
+    "theme": "Theme_DemonTown",
+    "partsCount": 39,
+    "projectilesCount": 4
+  },
+  {
+    "file": "In%20You%20Go",
+    "name": "In You Go",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 106,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Into%20The%20Fire",
+    "name": "Into The Fire",
+    "theme": "Theme_DemonTown",
+    "partsCount": 64,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Iron%20Eagle",
+    "name": "Iron Eagle",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 51,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Its%20Everything",
+    "name": "Its Everything",
+    "theme": "Theme_DemonTown",
+    "partsCount": 27,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Its%20The%20Pits",
+    "name": "Its The Pits",
+    "theme": "Theme_DemonTown",
+    "partsCount": 62,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Jackpot",
+    "name": "Jackpot",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 59,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Javelin",
+    "name": "Javelin",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 55,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Judgement",
+    "name": "Judgement",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 100,
+    "projectilesCount": 3
+  },
+  {
+    "file": "La%20Bomba",
+    "name": "La Bomba",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 38,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Laid%20Up",
+    "name": "Laid Up",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 41,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Lancelot",
+    "name": "Lancelot",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 31,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Larva%20Lounge",
+    "name": "Larva Lounge",
+    "theme": "Theme_Moon",
+    "partsCount": 147,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Launchers",
+    "name": "Launchers",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 30,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Lava%20Lounge",
+    "name": "Lava Lounge",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 18,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Lazer%20Fish",
+    "name": "Lazer Fish",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 175,
+    "projectilesCount": 2
+  },
+  {
+    "file": "Le%20Frog",
+    "name": "Le Frog",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 72,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Listen%20Here%20Mr",
+    "name": "Listen Here Mr",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 49,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Little%20Geordies",
+    "name": "Little Geordies",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 76,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Log%20Ride",
+    "name": "Log Ride",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 72,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Long%20Shot",
+    "name": "Long Shot",
+    "theme": "Theme_DemonTown",
+    "partsCount": 69,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Loop%20de%20Loop",
+    "name": "Loop de Loop",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 24,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Lotsa%20Luck",
+    "name": "Lotsa Luck",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 90,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Lucky%20Number",
+    "name": "Lucky Number",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 102,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Lunar%20Monstrosity",
+    "name": "Lunar Monstrosity",
+    "theme": "Theme_Moon",
+    "partsCount": 222,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Lunasaurus%20Rex",
+    "name": "Lunasaurus Rex",
+    "theme": "Theme_Moon",
+    "partsCount": 182,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Magnum",
+    "name": "Magnum",
+    "theme": "Theme_Moon",
+    "partsCount": 70,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Marjorie%20Door",
+    "name": "Marjorie Door",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 74,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Massive%20Attack",
+    "name": "Massive Attack",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 53,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Meat%20and%20Potatoes",
+    "name": "Meat and Potatoes",
+    "theme": "Theme_DemonTown",
+    "partsCount": 43,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Meltdown%20Hoedown",
+    "name": "Meltdown Hoedown",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 60,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Melting%20Pot",
+    "name": "Melting pot",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 31,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Metropolis",
+    "name": "Metropolis",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 45,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Mind%20The%20Gap",
+    "name": "Mind The Gap",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 136,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Mo%20Bang",
+    "name": "Mo Bang",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 69,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Moon%20Man",
+    "name": "Moon Man",
+    "theme": "Theme_Moon",
+    "partsCount": 82,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Moon%20Safari",
+    "name": "Moon Safari",
+    "theme": "Theme_Moon",
+    "partsCount": 69,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Moon%20Unit",
+    "name": "Moon Unit",
+    "theme": "Theme_Moon",
+    "partsCount": 56,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Moonitude",
+    "name": "Moonitude",
+    "theme": "Theme_Moon",
+    "partsCount": 63,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Nailed%20It",
+    "name": "Nailed It",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 19,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Nathan%20Man",
+    "name": "nathan man",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 33,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Night%20Hunt",
+    "name": "Night Hunt",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 32,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Night%20Raider",
+    "name": "Night Raider",
+    "theme": "Theme_Moon",
+    "partsCount": 62,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Nocturnal%20Nightmare",
+    "name": "Nocturnal Nightmare",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 74,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Nudge",
+    "name": "Nudge",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 49,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Octane%20Cocktail",
+    "name": "Octane Cocktail",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 43,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Off%20The%20Walls",
+    "name": "Off The Walls",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 62,
+    "projectilesCount": 3
+  },
+  {
+    "file": "One%20Boss%20To%20Rule%20Them%20All",
+    "name": "One Boss To Rule Them All",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 513,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Open%20Skullame",
+    "name": "Open Skullame",
+    "theme": "Theme_DemonTown",
+    "partsCount": 62,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Organ%20Donor",
+    "name": "Organ Donor",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 130,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Other%20Side",
+    "name": "Other Side",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 45,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Outpost",
+    "name": "Outpost",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 31,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Over%20Or%20Under",
+    "name": "Over Or Under",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 26,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Over%20The%20River",
+    "name": "Over The River",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 40,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Over%20and%20Back",
+    "name": "Over and Back",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 61,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Over%20the%20metal%20rainbow",
+    "name": "Over the metal rainbow",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 96,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Pachinko",
+    "name": "Pachinko",
+    "theme": "Theme_DemonTown",
+    "partsCount": 97,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Pad",
+    "name": "Pad",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 32,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Peenemunde",
+    "name": "Peenemunde",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 38,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Phantom",
+    "name": "Phantom",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 82,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Pinball",
+    "name": "Pinball",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 132,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Pinch%202%20Zoom",
+    "name": "Pinch 2 Zoom",
+    "theme": "Theme_Moon",
+    "partsCount": 107,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Play%20Balls",
+    "name": "Play Balls",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 32,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Port%20Side",
+    "name": "Port Side",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 35,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Potboiler",
+    "name": "Potboiler",
+    "theme": "Theme_DemonTown",
+    "partsCount": 70,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Press",
+    "name": "Press",
+    "theme": "Theme_Moon",
+    "partsCount": 79,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Prom%20Night",
+    "name": "Prom Night",
+    "theme": "Theme_Moon",
+    "partsCount": 105,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Punch%20Bowl",
+    "name": "Punch Bowl",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 59,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Pushy",
+    "name": "Pushy",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 45,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Pyramid%20of%20Pain",
+    "name": "Pyramid of Pain",
+    "theme": "Theme_Moon",
+    "partsCount": 63,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Pyramoon",
+    "name": "Pyramoon",
+    "theme": "Theme_Moon",
+    "partsCount": 97,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Ramp%20It%20Up",
+    "name": "Ramp it up",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 60,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Razors%20Edge",
+    "name": "Razors Edge",
+    "theme": "Theme_DemonTown",
+    "partsCount": 40,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Red%20Skull",
+    "name": "Red Skull",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 52,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Ride%20The%20Wave",
+    "name": "Ride The Wave",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 360,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Right%20Behind%20You",
+    "name": "Right Behind You",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 50,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Rubber%20Bumpers",
+    "name": "Rubber Bumpers",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 50,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Rubber%20Chalet",
+    "name": "Rubber Chalet",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 43,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Rubber%20Palace",
+    "name": "Rubber Palace",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 39,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Sauceateratops",
+    "name": "Sauceateratops",
+    "theme": "Theme_Moon",
+    "partsCount": 93,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Sauronuman",
+    "name": "Sauronuman",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 83,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Second%20Chance",
+    "name": "Second Chance",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 86,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Sequence",
+    "name": "Sequence",
+    "theme": "Theme_DemonTown",
+    "partsCount": 89,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Sharded",
+    "name": "Sharded",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 47,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Sho%20Gun",
+    "name": "Sho Gun",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 96,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Single",
+    "name": "Single",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 99,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Skull%20Factory",
+    "name": "Skull Factory",
+    "theme": "Theme_Moon",
+    "partsCount": 86,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Skull%20Fire",
+    "name": "Skull Fire",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 63,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Skull%20In%20One",
+    "name": "Skull In One",
+    "theme": "Theme_DemonTown",
+    "partsCount": 46,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Skull%20Skill",
+    "name": "Skull Skill",
+    "theme": "Theme_DemonTown",
+    "partsCount": 38,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Skull%20Tipper",
+    "name": "Skull Tipper",
+    "theme": "Theme_DemonTown",
+    "partsCount": 37,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Skullduggery",
+    "name": "Skullduggery",
+    "theme": "Theme_Moon",
+    "partsCount": 72,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Skullett",
+    "name": "Skullett",
+    "theme": "Theme_Moon",
+    "partsCount": 91,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Skullfolding",
+    "name": "Skullfolding",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 70,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Skultans%20Of%20Swing",
+    "name": "Skultans Of Swing",
+    "theme": "Theme_DemonTown",
+    "partsCount": 51,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Slim%20Pickings",
+    "name": "Slim Pickings",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 134,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Slow%20Ride",
+    "name": "Slow Ride",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 75,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Smack%20Down",
+    "name": "Smack Down",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 85,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Smash%20n%20Grab",
+    "name": "Smash n Grab",
+    "theme": "Theme_DemonTown",
+    "partsCount": 46,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Smoke%20Scream",
+    "name": "Smoke Scream",
+    "theme": "Theme_Moon",
+    "partsCount": 49,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Snake%20Fight",
+    "name": "Snake Fight",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 68,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Snooker",
+    "name": "Snooker",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 29,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Snow%20Assault",
+    "name": "Snow Assault",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 66,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Snow%20Day",
+    "name": "Snow Day",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 77,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Space%20Sea%20Snail",
+    "name": "Space Sea Snail",
+    "theme": "Theme_Moon",
+    "partsCount": 178,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Space%20Squid",
+    "name": "Space Squid",
+    "theme": "Theme_Moon",
+    "partsCount": 116,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Specter",
+    "name": "Specter",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 71,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Speeding%20Bullet",
+    "name": "Speeding Bullet",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 45,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Spinal%20Trap",
+    "name": "Spinal Trap",
+    "theme": "Theme_DemonTown",
+    "partsCount": 72,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Sprachen%20zie%20Sarge",
+    "name": "Sprachen zie Sarge",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 94,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Stairway%20to%20Heck",
+    "name": "Stairway to Heck",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 30,
+    "projectilesCount": 2
+  },
+  {
+    "file": "Star%20Struck",
+    "name": "Star Struck",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 26,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Steel%20Fortress",
+    "name": "Steel Fortress",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 68,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Steel%20Head",
+    "name": "Steel Head",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 143,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Steel%20Monument",
+    "name": "Steel Monument",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 25,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Stilt%20House%20Party",
+    "name": "Stilt House Party",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 64,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Stink%20Bomb",
+    "name": "Stink Bomb",
+    "theme": "Theme_Moon",
+    "partsCount": 121,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Stumpy%20The%20Clearcutter",
+    "name": "Stumpy The Clearcutter",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 165,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Sureal%20Killer",
+    "name": "Sureal Killer",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 61,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Sweep%20The%20Leg",
+    "name": "Sweep The Leg",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 131,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Sweet%20Spot",
+    "name": "Sweet Spot",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 45,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Swinger",
+    "name": "Swinger",
+    "theme": "Theme_DemonTown",
+    "partsCount": 66,
+    "projectilesCount": 3
+  },
+  {
+    "file": "The%20Beholder",
+    "name": "The Beholder",
+    "theme": "Theme_DemonTown",
+    "partsCount": 89,
+    "projectilesCount": 4
+  },
+  {
+    "file": "The%20Demon%20Under%20The%20Stairs",
+    "name": "The Demon Under The Stairs",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 39,
+    "projectilesCount": 3
+  },
+  {
+    "file": "The%20Dungeon",
+    "name": "The Dungeon",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 429,
+    "projectilesCount": 3
+  },
+  {
+    "file": "The%20Fall",
+    "name": "The Fall",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 99,
+    "projectilesCount": 2
+  },
+  {
+    "file": "The%20NotSoGreat%20Wall",
+    "name": "The NotSoGreat Wall",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 15,
+    "projectilesCount": 4
+  },
+  {
+    "file": "The%20Pits",
+    "name": "The Pits",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 91,
+    "projectilesCount": 4
+  },
+  {
+    "file": "The%20Return",
+    "name": "The Return",
+    "theme": "Theme_Moon",
+    "partsCount": 168,
+    "projectilesCount": 4
+  },
+  {
+    "file": "The%20Right%20Touch",
+    "name": "The Right Touch",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 39,
+    "projectilesCount": 3
+  },
+  {
+    "file": "The%20Vent",
+    "name": "The Vent",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 57,
+    "projectilesCount": 4
+  },
+  {
+    "file": "The%20White%20Whale",
+    "name": "The White Whale",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 62,
+    "projectilesCount": 4
+  },
+  {
+    "file": "This%20One",
+    "name": "This One",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 64,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Three%20Strikes",
+    "name": "Three Strikes",
+    "theme": "Theme_Moon",
+    "partsCount": 58,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Threepy%20Deux",
+    "name": "Threepy Deux",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 60,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Threepy",
+    "name": "Threepy",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 32,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Throwing%20Stones",
+    "name": "Throwing Stones",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 78,
+    "projectilesCount": 3
+  },
+  {
+    "file": "To%20The%20Point",
+    "name": "To The Point",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 101,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Totem%20Hunter",
+    "name": "Totem Hunter",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 87,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Totems",
+    "name": "Totems",
+    "theme": "Theme_DemonTown",
+    "partsCount": 39,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Tower%20of%20Terror",
+    "name": "Tower of Terror",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 67,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Towers%20Of%20Fume",
+    "name": "Towers Of Fume",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 134,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Toxic%20Fun",
+    "name": "Toxic Fun",
+    "theme": "Theme_Moon",
+    "partsCount": 41,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Toxic%20Towers",
+    "name": "Toxic Towers",
+    "theme": "Theme_Moon",
+    "partsCount": 104,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Toxic%20ice",
+    "name": "Toxic ice",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 94,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Trash%20Heap",
+    "name": "Trash Heap",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 64,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Trench%20Mouth",
+    "name": "Trench Mouth",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 57,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Triathalon",
+    "name": "Triathalon",
+    "theme": "Theme_Moon",
+    "partsCount": 217,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Triclopian",
+    "name": "Triclopian",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 60,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Trifecta",
+    "name": "Trifecta",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 26,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Triple%20Hitter",
+    "name": "Triple Hitter",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 43,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Triple%20Witch",
+    "name": "Triple Witch",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 68,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Troglodyte",
+    "name": "Troglodyte",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 120,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Trucking",
+    "name": "Trucking",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 74,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Try%20Me",
+    "name": "Try Me",
+    "theme": "Theme_DemonTown",
+    "partsCount": 37,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Turbines",
+    "name": "Turbines",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 135,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Twin%20Bangoo",
+    "name": "Twin Bangoo",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 30,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Two%20Birdies",
+    "name": "Two Birdies",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 44,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Twofer%20Plus",
+    "name": "Twofer Plus",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 60,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Twofer",
+    "name": "Twofer",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 48,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Tyrannical",
+    "name": "Tyrannical",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 85,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Under%20Cover",
+    "name": "Under Cover",
+    "theme": "Theme_HauntedWasteland",
+    "partsCount": 47,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Unhinged",
+    "name": "Unhinged",
+    "theme": "Theme_DemonTown",
+    "partsCount": 68,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Up%20Hill",
+    "name": "Up Hill",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 56,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Utilitarian%20Pipeline",
+    "name": "Utilitarian Pipeline",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 98,
+    "projectilesCount": 5
+  },
+  {
+    "file": "Walk%20The%20Walk",
+    "name": "Walk the Walk",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 51,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Walk%20Up",
+    "name": "Walk Up",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 51,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Warehouse%20Frolic",
+    "name": "Warehouse Frolic",
+    "theme": "Theme_Moon",
+    "partsCount": 122,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Weekend%20Driveby",
+    "name": "Weekend Driveby",
+    "theme": "Theme_HellsHighway",
+    "partsCount": 26,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Well%20of%20Skulls",
+    "name": "Well of Skulls",
+    "theme": "Theme_Moon",
+    "partsCount": 127,
+    "projectilesCount": 4
+  },
+  {
+    "file": "Why%20I%20Oughta",
+    "name": "Why I Oughta",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 71,
+    "projectilesCount": 3
+  },
+  {
+    "file": "Winners%20Circle",
+    "name": "Winners Circle",
+    "theme": "Theme_IndustrialArm",
+    "partsCount": 67,
+    "projectilesCount": 2
+  },
+  {
+    "file": "With%20Envy",
+    "name": "With Envy",
+    "theme": "Theme_DemonTown",
+    "partsCount": 57,
+    "projectilesCount": 6
+  },
+  {
+    "file": "Yellow%20Snow",
+    "name": "Yellow Snow",
+    "theme": "Theme_Iceopolis",
+    "partsCount": 65,
+    "projectilesCount": 5
+  },
+  {
+    "file": "learning%20the%20basics",
+    "name": "learning the basics",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 62,
+    "projectilesCount": 6
+  },
+  {
+    "file": "line%20of%20Sight",
+    "name": "line of Sight",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 66,
+    "projectilesCount": 5
+  },
+  {
+    "file": "pyro",
+    "name": "pyro",
+    "theme": "Theme_Trucksylvania",
+    "partsCount": 53,
+    "projectilesCount": 6
+  }
+]

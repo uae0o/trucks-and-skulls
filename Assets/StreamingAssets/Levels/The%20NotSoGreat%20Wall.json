@@ -1,0 +1,122 @@
+{
+  "file": "The%20NotSoGreat%20Wall",
+  "name": "The NotSoGreat Wall",
+  "theme": "Theme_Iceopolis",
+  "width": 2034.0,
+  "height": 768.0,
+  "launcherX": -606.4892578125,
+  "launcherY": -184.64999389648438,
+  "projectiles": [
+    "Projectile_Doomstone",
+    "Projectile_CrotchRocket",
+    "Projectile_CrotchRocket",
+    "Projectile_CrotchRocket"
+  ],
+  "parts": [
+    {
+      "name": "StructurePart_GroundBox",
+      "x": 0.0,
+      "y": -340.0,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_SteelLargeSquare",
+      "x": 192.4429931640625,
+      "y": -185.03294372558594,
+      "angle": 0.0,
+      "hinged": true
+    },
+    {
+      "name": "StructurePart_SteelLargeSquare",
+      "x": 192.4429931640625,
+      "y": -138.48294067382812,
+      "angle": 0.0,
+      "hinged": true
+    },
+    {
+      "name": "StructurePart_SteelLargeSquare",
+      "x": 192.4429931640625,
+      "y": -91.93290710449219,
+      "angle": 0.0,
+      "hinged": true
+    },
+    {
+      "name": "StructurePart_SteelLargeSquare",
+      "x": 192.4429931640625,
+      "y": -45.38291931152344,
+      "angle": 0.0,
+      "hinged": true
+    },
+    {
+      "name": "StructurePart_SteelLargeSquare",
+      "x": 192.4429931640625,
+      "y": 1.1670684814453125,
+      "angle": 0.0,
+      "hinged": true
+    },
+    {
+      "name": "StructurePart_SteelLargeSquare",
+      "x": 192.4429931640625,
+      "y": 47.71709442138672,
+      "angle": 0.0,
+      "hinged": true
+    },
+    {
+      "name": "StructurePart_VolcanoMedium",
+      "x": 36.50653839111328,
+      "y": -240.80001831054688,
+      "angle": 0.0,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_Skull",
+      "x": 324.59228515625,
+      "y": 5.18951416015625,
+      "angle": -4.3864827677271567e-13,
+      "hinged": true
+    },
+    {
+      "name": "StructurePart_Skull",
+      "x": 447.6689453125,
+      "y": -142.50534057617188,
+      "angle": -2.0457843821736777e-23,
+      "hinged": true
+    },
+    {
+      "name": "StructurePart_Skull",
+      "x": 324.59228515625,
+      "y": -167.37196350097656,
+      "angle": -2.0457843821736777e-23,
+      "hinged": true
+    },
+    {
+      "name": "StructurePart_DynamiteBarrel",
+      "x": 488.8583984375,
+      "y": -2.148850917816162,
+      "angle": 0.008565030992031097,
+      "hinged": true
+    },
+    {
+      "name": "StructurePart_BonusBomb100",
+      "x": 488.8491516113281,
+      "y": 60.23454284667969,
+      "angle": 0.008593118749558926,
+      "hinged": false
+    },
+    {
+      "name": "StructurePart_DynamiteBarrel",
+      "x": 398.65234375,
+      "y": -254.45025634765625,
+      "angle": 0.00856224074959755,
+      "hinged": true
+    },
+    {
+      "name": "StructurePart_BonusBomb100",
+      "x": 398.6430358886719,
+      "y": -192.06687927246094,
+      "angle": 0.00859353318810463,
+      "hinged": false
+    }
+  ]
+}
